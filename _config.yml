@@ -1,0 +1,28 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+
+# Setup
+title:               Security Assessment?!
+tagline:             maybe it's not my role in this life
+description:         matta's notes for security assessment and pentesting
+url:                 http://me.matta.kr/SecAsmt
+baseurl:             '/SecAsmt'
+paginate:            5
+
+# About/contact
+author:
+  name:              JS Park
+  url:               http://me.matta.kr/SecAsmt
+  email:             js00n.park@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+github:
+  repo:              https://github.com/JisoonPark/SecAsmt
+
+category_dir: category/
+tag_dir: tag/
