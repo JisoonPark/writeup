@@ -2,7 +2,7 @@
 layout: post
 title: Messenger
 category: Crypto
-rpath: resource/Messenger
+rpath: /resource/Messenger
 tag: [algebra, extended_euclidean_algorithm] 
 ---
 
@@ -26,7 +26,7 @@ tag: [algebra, extended_euclidean_algorithm]
 
 ## Write-up
 
-우선, 주어진 [IBM.py 파일]({{site.github.master}}/{{page.rpath}}/IBM.py)을 살펴보자.
+우선, 주어진 [IBM.py 파일]({{site.github.master}}{{page.rpath}}/IBM.py)을 살펴보자.
 
 서비스 시작과 동시에 messages 디렉토리의 admin 파일에 flag를 기록하고,  
 pk(public key)와 서버의 sk(secret key)를 생성한다.
@@ -65,7 +65,7 @@ id1과 id2는 SHA256을 적용 했을 때 서로 소(relative prime)인 id를 �
 
 ![img]({{page.rpath}}/findsk.gif)
 
-sk를 찾았으므로, register와 login 및 read 과정을 참고하여 [exploit]({{site.github.master}}/{{page.rpath}}/ex.py)을 작성 후 실행해보면  
+sk를 찾았으므로, register와 login 및 read 과정을 참고하여 [exploit]({{site.github.master}}{{page.rpath}}/ex.py)을 작성 후 실행해보면  
 admin의 메세지에 있는 flag 값을 찾아낼 수 있다.
 
 ![img]({{page.rpath}}/flag.png)
