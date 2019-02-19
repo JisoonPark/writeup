@@ -110,6 +110,6 @@ print cipher.decrypt(ct, 0)
 ![img]({{page.rpath|prepend:site.baseurl}}/flag.png)
 
 plain RSA를 이용해서 decryption 했을 때 앞에 지저분한(?) 것들이 보이고 뒤에 flag 같은게 보인다. hex 값을 찍어보면 0x02로 시작하는 걸로 보아 ruby에서 RSAES-PKCCS#1_v1.5 padding을 붙인 것 같다.  
-그냥 flag만 발췌해도 되지만 나중에 참고용으로 RSAES-PKCCS#1_v1.5 decryption code도 exploit에 포함했다.
+그냥 flag만 발췌해도 되지만 나중에 참고용으로 RSAES-PKCCS#1_v1.5 decryption code도 [exploit]({{site.github.master}}{{page.rpath}}/ex.py)에 포함했다.
 
 Flag : <b>TWCTF{9c10a83c122a9adfe6586f498655016d3267f195}</b>
