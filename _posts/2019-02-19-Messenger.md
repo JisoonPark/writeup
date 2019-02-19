@@ -2,7 +2,8 @@
 layout: post
 title: Messenger
 category: Crypto
-resource: blob/master/resource/Messenger
+imgpath: resource/Messenger
+srcpath: {{site.github.repo}}/blob/master/{{page.imgpath}}
 tag: [algebra, extended_euclidean_algorithm] 
 ---
 
@@ -26,16 +27,16 @@ tag: [algebra, extended_euclidean_algorithm]
 
 ## Write-up
 
-우선, 주어진 [IBM.py 파일]({{site.github.repo}}/{{page.resource}}/IBM.py)을 살펴보자.
+우선, 주어진 [IBM.py 파일]({{page.srcpath}}/IBM.py)을 살펴보자.
 
 서비스 시작과 동시에 messages 디렉토리의 admin 파일에 flag를 기록하고,  
 pk(public key)와 서버의 sk(secret key)를 생성한다.
 
-![img](resource/Messenger/setup.gif)
+![img]({{page.imgpath}}/setup.gif)
 
 이후 사용자가 register를 요청하면 사용자 ID와 pk, sk를 이용하여 사용자별 sk를 생성하여 반환해준다.
 
-![img]({{site.github.repo}}/{{page.resource}}/register.gif)
+![img]({{page.srcpath}}/register.gif)
 
 read 또는 write 요청이 있는 경우에는 (brute-force 공격을 막기 위해 POC 단계를 거친 후)  
 사용자 ID와 사용자 sk를 이용하여 로그인 수행 후에 read/write 요청을 수행한다.
