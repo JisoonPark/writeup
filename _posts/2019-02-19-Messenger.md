@@ -31,7 +31,7 @@ tag: [algebra, extended_euclidean_algorithm]
 서비스 시작과 동시에 messages 디렉토리의 admin 파일에 flag를 기록하고,  
 pk(public key)와 서버의 sk(secret key)를 생성한다.
 
-![img]({{site.github.repo}}/{{page.resource}}/setup.gif)
+![img](resource/Messenger/setup.gif)
 
 이후 사용자가 register를 요청하면 사용자 ID와 pk, sk를 이용하여 사용자별 sk를 생성하여 반환해준다.
 
