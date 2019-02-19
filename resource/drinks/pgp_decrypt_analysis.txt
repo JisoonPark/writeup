@@ -1,0 +1,58 @@
+ESK_Packet | header|encrypt(header|compress(header|data))
+
+0x8c0d040903020471096eee9620e5ff d2460173e0fbf277e4b1208ae75114d37af36677d250c7ba96c98a8a3fddbcc26df49ef5fbc0fda8e1a9408aa4367aa35dc028752aa70ad92e6be28c4b9948aaf8bbc93bcf03b4e6L
+*prefix 0x8c0d04090302
+*길이는 입력과 동일 (no paddings)
+
+0x8c0d0409030202c91007cefbd11eff
+Old: Symmetric-Key Encrypted Session Key Packet(tag 3)(13 bytes)
+        New version(4)
+        Sym alg - AES with 256-bit key(sym 9)
+        Iterated and salted string-to-key(s2k 3):
+                Hash alg - SHA1(hash 2)
+                Salt - \x02\xc9\x10\x07\xce\xfb\xd1\x1e
+                Count - 65011712(coded count 255)
+
+00 : 8c : 10001100 - Symmetric-Key Encrypted Session Key Packet
+01 : 0d : length(S2K specifier 까지 길이)
+02 : 04 : version number
+03 : 09 : symmetric algorithm - AES256
+=== S2K specifier start ===
+04 : 03 : Iterated and Salted S2K
+05 : 02 : SHA1
+06 : 02c91007cefbd11e : 8 byte salt
+14 : ff : count(255), means 65011712
+=== S2K specifier end ===
+
+
+d2460173e0fbf277e4b1208ae75114d37af36677d250c7ba96c98a8a3fddbcc26df49ef5fbc0fda8e1a9408aa4367aa35dc028752aa70ad92e6be28c4b9948aaf8bbc93bcf03b4e6
+New: Symmetrically Encrypted and MDC Packet(tag 18)(70 bytes)
+        Ver 1
+        Encrypted data [sym alg is specified in sym-key encrypted session key]
+                (plain text + MDC SHA1(20 bytes))
+
+00 : d2 : 11 010010 - Symmetrically Encrypted and MDC Packet
+01 : 46 : length (70 bytes) 
+02 : 01 : version byte(1)
+... payload
+-22 : 0xD3
+-21 : 0x14
+-20 : SHA-1 hash
+
+payload : a3013b2d9ec410e3eca2999b585292585313ee18e21a146f6460680900
+
+00 : a3 : 10 1000 11 - compressed packet without length info
+01 : 01 : ZIP
+02 : umpressed data
+
+uncompress : cb176200 5c434429 6d617474617c7c57415445525f32303139
+00 : cb : 11 001011 - Literal Data Packet
+01 : 17 : length (23)
+02 : 62 : binary data
+03 : 00 : length of file name(null)
+04 : date associated with the literal data(5c434429)
+08 : literal data
+
+
+
+
