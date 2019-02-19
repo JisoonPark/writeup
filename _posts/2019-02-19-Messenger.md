@@ -2,10 +2,9 @@
 layout: post
 title: Messenger
 category: Crypto
+resource: resource/Messenger
 tag: [algebra, extended_euclidean_algorithm] 
 ---
-
-# Messenger
 
 **Category:** Crypto
 
@@ -27,7 +26,7 @@ tag: [algebra, extended_euclidean_algorithm]
 
 ## Write-up
 
-우선, 주어진 [IBM.py 파일](resource/IBM.py)을 살펴보자.
+우선, 주어진 [IBM.py 파일]({{page.resource}}/IBM.py)을 살펴보자.
 
 서비스 시작과 동시에 messages 디렉토리의 admin 파일에 flag를 기록하고,  
 pk(public key)와 서버의 sk(secret key)를 생성한다.
