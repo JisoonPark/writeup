@@ -8,8 +8,8 @@ permalink:           pretty
 title:               Security Assessment?!
 tagline:             maybe it's not my role in this life
 description:         matta's notes for security assessment and pentesting
-url:                 http://me.matta.kr/SecAsmt
-baseurl:             '/SecAsmt'
+url:                 http://me.matta.kr/writeup
+baseurl:             '/writeup'
 paginate:            5
 
 # About/contact
