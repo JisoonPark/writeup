@@ -50,7 +50,8 @@ user_sk 하나만 가지고는 진도를 나가기 힘들어 보인다. register
 id와 그에 따른 sk를 생성하여, 각각을 sk_a, sk_b라고 하자.
 
 주어진 ID 기반 암호화 시스템은 sk의 비밀성에 기반을 두고 있으니, 서버의 sk만 알 수 있으면 시스템을 
-공격할 수 있을 것이다.  
+공격할 수 있을 것이다.
+
 서버의 sk에 지수 연산을 하여 사용자 sk를 생성하고 있으니, 두 개의 사용자 sk를 알고 있으면 
 [확장 유클리드 알고리즘(extended euclid algorithm)](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)을 사용하여 서버의 sk를 찾을 수 있을 것으로 여겨진다.
 
