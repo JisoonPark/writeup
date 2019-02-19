@@ -2,7 +2,7 @@
 layout: post
 title: Messenger
 category: Crypto
-resource: resource/Messenger
+resource: blob/master/resource/Messenger
 tag: [algebra, extended_euclidean_algorithm] 
 ---
 
