@@ -2,7 +2,7 @@
 layout: post
 title: Messenger
 category: Crypto
-rpath: resource/Messenger
+rpath: /resource/Messenger
 tag: [algebra, extended_euclidean_algorithm] 
 ---
 
@@ -26,22 +26,22 @@ tag: [algebra, extended_euclidean_algorithm]
 
 ## Write-up
 
-우선, 주어진 [IBM.py 파일]({{site.github.master}}/{{page.rpath}}/IBM.py)을 살펴보자.
+우선, 주어진 [IBM.py 파일]({{site.github.master}}{{page.rpath}}/IBM.py)을 살펴보자.
 
 서비스 시작과 동시에 messages 디렉토리의 admin 파일에 flag를 기록하고,  
 pk(public key)와 서버의 sk(secret key)를 생성한다.
 
-![img]({{site.baseurl}}/{{page.rpath}}/setup.gif)
+![img]({{page.rpath|prepend:site.baseurl}}/setup.gif)
 
 이후 사용자가 register를 요청하면 사용자 ID와 pk, sk를 이용하여 
 사용자별 sk를 생성하여 반환해준다.
 
-![img]({{site.baseurl}}/{{page.rpath}}/register.gif)
+![img]({{page.rpath|prepend:site.baseurl}}/register.gif)
 
 read 또는 write 요청이 있는 경우에는 (brute-force 공격을 막기 위해 POC 단계를 거친 후) 
 사용자 ID와 사용자 sk를 이용하여 로그인 수행 후에 read/write 요청을 수행한다.
 
-![img]({{site.baseurl}}/{{page.rpath}}/login.gif)
+![img]({{page.rpath|prepend:site.baseurl}}/login.gif)
 
 read 및 write 기능은 messages/[id] 파일을 통하여 이루어 지므로, register/read/write를 잘 조합하여 
 messages/admin 파일의 내용을 읽어 오면 flag를 획득할 수 있겠다.
@@ -56,18 +56,18 @@ id와 그에 따른 sk를 생성하여, 각각을 sk_a, sk_b라고 하자.
 
 [확장 유클리드 알고리즘](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)을 이용하여 다음을 만족하는 a와 b를 찾는다.  
 
-![img]({{site.baseurl}}/{{page.rpath}}/exeuc.gif)
+![img]({{page.rpath|prepend:site.baseurl}}/exeuc.gif)
 
 id1과 id2는 SHA256을 적용 했을 때 서로 소(relative prime)인 id를 사용하면 된다.  
 아무거나 몇 번 시도해보면 쉽게 찾을 수 있다.
 
 지수 연산과 곱셈 연산을 통해 다음과 같이 서버의 sk를 찾아낼 수 있다.
 
-![img]({{site.baseurl}}/{{page.rpath}}/findsk.gif)
+![img]({{page.rpath|prepend:site.baseurl}}/findsk.gif)
 
-sk를 찾았으므로, register와 login 및 read 과정을 참고하여 [exploit]({{site.github.master}}/{{page.rpath}}/ex.py)을 작성 후 실행해보면  
+sk를 찾았으므로, register와 login 및 read 과정을 참고하여 [exploit]({{site.github.master}}{{page.rpath}}/ex.py)을 작성 후 실행해보면  
 admin의 메세지에 있는 flag 값을 찾아낼 수 있다.
 
-![img]({{site.baseurl}}/{{page.rpath}}/flag.png)
+![img]({{page.rpath|prepend:site.baseurl}}/flag.png)
 
 Flag : <b>SCTF{Constructing_ID_Based_Cryptosystem_is_so_hard_:(}</b>
