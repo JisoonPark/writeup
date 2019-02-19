@@ -15,14 +15,14 @@ paginate:            5
 # About/contact
 author:
   name:              JS Park
-  url:               http://me.matta.kr/SecAsmt
+  url:               http://me.matta.kr
   email:             js00n.park@gmail.com
 
 # Custom vars
 version:             1.0.0
 
 github:
-  repo:              https://github.com/JisoonPark/SecAsmt
+  repo:              https://github.com/JisoonPark/writeup
 
 category_dir: category/
 tag_dir: tag/
