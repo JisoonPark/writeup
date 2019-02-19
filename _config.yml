@@ -23,6 +23,7 @@ version:             1.0.0
 
 github:
   repo:              https://github.com/JisoonPark/writeup
+  master:            https://github.com/JisoonPark/writeup/blob/master
 
 category_dir: category/
 tag_dir: tag/
