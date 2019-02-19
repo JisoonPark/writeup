@@ -3,6 +3,7 @@ layout: post
 title: Messenger
 category: Crypto
 imgpath: resource/Messenger
+srcpath: {{site.github.repo}}/blob/master/resource/Messenger
 tag: [algebra, extended_euclidean_algorithm] 
 ---
 
