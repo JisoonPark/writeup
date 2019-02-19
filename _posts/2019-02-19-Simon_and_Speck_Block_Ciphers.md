@@ -1,4 +1,10 @@
-# Simon and Speck Block Ciphers
+---
+layout: post
+title: Simon and Speck Block Ciphers
+category: Crypto
+rpath: /resource/Simon_and_Speck_Block_Ciphers
+tag: [simon, brute_force] 
+---
 
 **Category:** Crypto
 
