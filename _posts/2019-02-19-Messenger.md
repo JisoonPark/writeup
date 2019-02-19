@@ -33,24 +33,25 @@ pk(public key)와 서버의 sk(secret key)를 생성한다.
 
 ![img]({{page.rpath}}/setup.gif)
 
-이후 사용자가 register를 요청하면 사용자 ID와 pk, sk를 이용하여 사용자별 sk를 생성하여 반환해준다.
+이후 사용자가 register를 요청하면 사용자 ID와 pk, sk를 이용하여 
+사용자별 sk를 생성하여 반환해준다.
 
 ![img]({{page.rpath}}/register.gif)
 
-read 또는 write 요청이 있는 경우에는 (brute-force 공격을 막기 위해 POC 단계를 거친 후)  
+read 또는 write 요청이 있는 경우에는 (brute-force 공격을 막기 위해 POC 단계를 거친 후) 
 사용자 ID와 사용자 sk를 이용하여 로그인 수행 후에 read/write 요청을 수행한다.
 
 ![img]({{page.rpath}}/login.gif)
 
-read 및 write 기능은 messages/[id] 파일을 통하여 이루어 지므로, register/read/write를 잘 조합하여  
+read 및 write 기능은 messages/[id] 파일을 통하여 이루어 지므로, register/read/write를 잘 조합하여 
 messages/admin 파일의 내용을 읽어 오면 flag를 획득할 수 있겠다.
 
-user_sk 하나만 가지고는 진도를 나가기 힘들어 보인다. register 시도 횟수에는 제한이 없으니 두 개의  
+user_sk 하나만 가지고는 진도를 나가기 힘들어 보인다. register 시도 횟수에는 제한이 없으니 두 개의 
 id와 그에 따른 sk를 생성하여, 각각을 sk_a, sk_b라고 하자.
 
-주어진 ID 기반 암호화 시스템은 sk의 비밀성에 기반을 두고 있으니, 서버의 sk만 알 수 있으면 시스템을  
+주어진 ID 기반 암호화 시스템은 sk의 비밀성에 기반을 두고 있으니, 서버의 sk만 알 수 있으면 시스템을 
 공격할 수 있을 것이다.  
-서버의 sk에 지수 연산을 하여 사용자 sk를 생성하고 있으니, 두 개의 사용자 sk를 알고 있으면  
+서버의 sk에 지수 연산을 하여 사용자 sk를 생성하고 있으니, 두 개의 사용자 sk를 알고 있으면 
 [확장 유클리드 알고리즘(extended euclid algorithm)](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)을 사용하여 서버의 sk를 찾을 수 있을 것으로 여겨진다.
 
 [확장 유클리드 알고리즘](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm)을 이용하여 다음을 만족하는 a와 b를 찾는다.  
