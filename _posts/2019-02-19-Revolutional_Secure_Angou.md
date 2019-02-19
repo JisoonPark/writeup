@@ -3,7 +3,7 @@ layout: post
 title: Revolutional Secure Angou
 category: Crypto
 rpath: /resource/Revolutional_Secure_Angou
-tag: [RSA, extended_euclidean_algorithm] 
+tag: [RSA, euler, brute_force] 
 ---
 
 **Category:** Crypto
