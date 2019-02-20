@@ -3,7 +3,7 @@ layout: post
 title: mini converter
 category: Pwnable
 rpath: /resource/mini_converter
-tag: [ruby, buffer_under_read] 
+tag: [ruby, buffer_under_read, unpack] 
 ---
 
 **Category:** Pwnable
