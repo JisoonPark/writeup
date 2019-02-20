@@ -3,10 +3,10 @@ layout: post
 title: plz variable
 category: Misc
 rpath: /resource/plz_variable
-tag: [JPEG, jpeginfo] 
+tag: [polynomial, z3] 
 ---
 
-**Category:** Misc
+**Category:** Misc/Polynomial Solving
 
 **Source:** wargame.kr
 
@@ -48,7 +48,7 @@ python polynomial로 검색을 해보면 sage, sympy, numpy, scipy 등 다항식
 
 이런저런 검색 끝에 z3 solver를 찾았는데, 이거 좀 좋은거 같다 ㅋㅋㅋ
 
-문제에서 원하는 바가 굉장히 명확하므로, [exploit](resource/ex.py)에 대한 설명으로 writeup을 대신한다.
+문제에서 원하는 바가 굉장히 명확하므로, [exploit]({{site.github.master}}{{page.rpath}}/ex.py)에 대한 설명으로 writeup을 대신한다.
 
 ```python
 for idx in range(30):
