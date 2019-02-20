@@ -16,9 +16,9 @@ tag: [base64, brute_force]
 
 **Description:** 
 
->Functional Language? So Easy haha:P
-
->Flag Info : =ze=/<fQCGSNVzfDnlk$&?N3oxQp)K/CVzpznK?NeYPx0sz5
+> Functional Language? So Easy haha:P
+> 
+> Flag Info : =ze=/<fQCGSNVzfDnlk$&?N3oxQp)K/CVzpznK?NeYPx0sz5
 
 ## Write-up
 
@@ -37,7 +37,7 @@ $ ./EasyHaskell < in
 "/WGx9=ddP@f?nYp5"
 ```
 ELF 파일을 objdump 를 통해서 보면 굉장히 많은 Symbol이 검색되고 ghc를 통해서 빌드된 Haskell 로 작성한 코드임을 할 수 있다.  
-확신은 없지만 <pre><main>:0x040ad51 --> <hs_main>:0x047d8a0</pre>로 호출 하는 코드가 확인된다. 분석을 위해 Gdb로 hs_main 부터 Step으로 따라가 보면, <pre><rts_evalLazyIO>:0x47d90b</pre>를 실행한 후부터 SIG_TRAP이 발생하면서 GDB를 사용할 수가 없게 된다. anti-debug 가 적용된 것으로 추측 된다. 
+확신은 없지만 <main>:0x040ad51 --> <hs_main>:0x047d8a0로 호출 하는 코드가 확인된다. 분석을 위해 Gdb로 hs_main 부터 Step으로 따라가 보면, <rts_evalLazyIO>:0x47d90b를 실행한 후부터 SIG_TRAP이 발생하면서 GDB를 사용할 수가 없게 된다. anti-debug 가 적용된 것으로 추측 된다. 
 
 따라서 Reversing 만으로는 정확히 어떻게 결과가 나오는지 알 수없다. Decompile을해도 너무 많은 심볼이 나와서 어떤 부분이 Flag에 관련된 코드이고 어떤 부분이 Haskell에 있는 기본 심볼인지 파악이 쉽지 않다. 
 
@@ -73,11 +73,12 @@ $ ./aaaaaaaaa
 $ ./SCTF
 "=ze=/~55"
 ```
-  1. 간단한 테스트로 알수 있는 결론은 3개의 Input은 4개의 고유의 Output 을 가지며
+간단한 테스트로 알수 있는 결론은
+  1. 3개의 Input은 4개의 고유의 Output 을 가지며
   2. 3개 미만의 Input은 패딩을 포함해서 마찬가지로 4개의 Output이 된다.
   3. SCTF 의 문제 Flag format이 SCTF{...} 임을 감안했을때 이 값으로 넣으면 Description에 있는 Flag info의 앞 부분과 매치 된다.
 
-따라서 EasyHaskell은 Base64 Encoding을 하는 프로그램이지만, 표준 변환 Table이 아니며 자신만의 변환 Table을 가지고 있다. 그리고 Flag info와 완전 동일한 Output을 가지게 하는 파일명이 Flag가 된다. 
+따라서 EasyHaskell은 Base64 Encoding을 하는 프로그램이지만, 표준 변환 Table이 아니며 자신만의 변환 Table을 가지고 있다. 그리고 Flag info와 완전 동일한 Output을 가지게 하는 파일명이 Flag가 될 것이다.
 
 문제를 푸는 방법은
 
@@ -116,48 +117,48 @@ run_haskell 함수는 EasyHaskell 바이너리의 Symlink를 만들어서 popen�
 ```
 int main(void)
 {
-        int a,b,c;
-        char next[4] = {0,};
-        FILE *fp;
-        char buf[1024];
-        char *answer_a;
-        char *answer_b;
-        char *answer_c;
-        int size = sizeof(string);
+    int a,b,c;
+    char next[4] = {0,};
+    FILE *fp;
+    char buf[1024];
+    char *answer_a;
+    char *answer_b;
+    char *answer_c;
+    int size = sizeof(string);
 
 again:
-                for(a = 0 ;a < size; a++) {
-                        next[0] = string[a];
-                        dest[dest_cur] = string[a];
-                        answer_a = run_haskell(dest);
-                        if( answer_a == NULL ) {
+        for(a = 0 ;a < size; a++) {
+            next[0] = string[a];
+            dest[dest_cur] = string[a];
+            answer_a = run_haskell(dest);
+            if( answer_a == NULL ) {
+                continue;
+            }
+            if( strcmp(goal, answer_a) == 0){
+                printf ("Answer : %s\n", dest);
+                return 0;
+            }
+            if( answer_a[goal_cur] == goal[goal_cur] )
+            {
+                for(b = 0; b < size ; b++){
+                    next[1] = string[b];
+                    dest[dest_cur + 1] = string[b];
+                    answer_b = run_haskell(dest);
+                    if( answer_b == NULL ) {
+                        continue;
+                    }
+                    if( answer_b[goal_cur+1] == goal[goal_cur+1] )
+                    {
+                        if( strcmp(goal, answer_b) == 0){
+                            printf ("Answer : %s\n", dest);
+                            return 0;
+                        }
+                        for(c = 0 ; c < size ; c++) {
+                            next[2] = string[c];
+                            dest[dest_cur+2] = string[c];
+                            answer_c = run_haskell(dest);
+                            if( answer_c == NULL ) {
                                 continue;
-                        }
-                        if( strcmp(goal, answer_a) == 0){
-                                printf ("Answer : %s\n", dest);
-                                return 0;
-                        }
-                        if( answer_a[goal_cur] == goal[goal_cur] )
-                        {
-                                for(b = 0; b < size ; b++){
-                                        next[1] = string[b];
-                                        dest[dest_cur + 1] = string[b];
-                                        answer_b = run_haskell(dest);
-                                        if( answer_b == NULL ) {
-                                                continue;
-                                        }
-                                        if( answer_b[goal_cur+1] == goal[goal_cur+1] )
-                                        {
-                                                if( strcmp(goal, answer_b) == 0){
-                                                        printf ("Answer : %s\n", dest);
-                                                        return 0;
-                                                }
-                                                for(c = 0 ; c < size ; c++) {
-                                                        next[2] = string[c];
-                                                        dest[dest_cur+2] = string[c];
-                                                        answer_c = run_haskell(dest);
-                                                        if( answer_c == NULL ) {
-                                                                continue;
 ...
 ...
 
