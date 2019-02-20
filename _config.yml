@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               Security Assessment?!
-tagline:             maybe it's not my role in this life
+tagline:             이번 생에는 어려울듯.
 description:         matta's notes for security assessment and pentesting
 url:                 http://me.matta.kr/writeup
 baseurl:             '/writeup'
