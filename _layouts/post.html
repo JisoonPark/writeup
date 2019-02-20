@@ -8,6 +8,14 @@ layout: default
   {{ content }}
 </div>
 
+<div class="post">
+  {% for t in page.tag %}
+      <h4>
+          <small>#{{ t }}</small>
+      </h4>
+  {% endfor %}
+</div>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
