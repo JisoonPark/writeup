@@ -3,7 +3,7 @@ layout: post
 title: img recovery
 category: Forensic
 rpath: /resource/img_recovery
-tag: [] 
+tag: [png, japng, QR] 
 ---
 
 **Category:** Forensic
