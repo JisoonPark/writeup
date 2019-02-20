@@ -9,10 +9,9 @@ layout: default
 </div>
 
 <div class="post">
+  tags: 
   {% for t in page.tag %}
-      <h4>
-          <small>#{{ t }}</small>
-      </h4>
+    <small style="background-color:powderblue;">#{{ t }}</small>
   {% endfor %}
 </div>
 
