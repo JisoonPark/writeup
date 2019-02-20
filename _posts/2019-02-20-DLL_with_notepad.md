@@ -3,7 +3,7 @@ layout: post
 title: DLL with notepad
 category: Reversing
 rpath: /resource/DLL_with_notepad
-tag: [] 
+tag: [dlopen, ollydbg] 
 ---
 
 **Category:** Reversing
