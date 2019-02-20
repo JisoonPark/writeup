@@ -3,7 +3,7 @@ layout: post
 title: collision
 category: Pwnable
 rpath: /resource/collision
-tag: [] 
+tag: [hash, collision] 
 ---
 
 **Category:** Pwnable
