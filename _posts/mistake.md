@@ -1,0 +1,70 @@
+# mistake
+
+**Category:** Pwnable
+
+**Source:** pwnable.kr
+
+**Points:** 20
+
+**Author:** Jisoon Park(js00n.park)
+
+**Description:** 
+
+> We all make mistakes, let's move on.
+>
+>(don't take this too seriously, no fancy hacking skill is required at all)
+>
+>This task is based on real event
+>
+>Thanks to dhmonkey
+>
+>hint: operator priority
+
+## Write-up
+
+우선, 코드의 main() 함수를 살펴보자. 
+
+![wiki](resource/code.png)
+
+17라인에서 password 파일을 열고, 27라인에서 read() 함수로 파일의 데이터를 읽어들인 후,<br>
+35라인에서 사용자로부터 문자열을 입력받아 38라인에서 xor() 함수를 거치고<br>
+40라인에서 문자열을 비교하여 flag 값을 출력해주는 프로그램처럼(!) 보인다.
+
+깊게 생각하기에 앞서 실행해 보자.<br>
+23라인의 sleep() 함수를 지난 후 34라인의 메세지가 출력이 되어야 하는데,<br>
+아무리 기다려도 아무런 출력도 나오지 않는다.<br>
+기다림에 지쳐 아무 문자열이나 넣어보면 그제서야 34라인이 실행되는걸 알 수 있다.
+
+![wiki](resource/run1.png)
+
+왜 때문인가.
+
+23라인 이후부터 34라인 이전의 코드를 잘 살펴보면, 프로그램 실행을 block 할 수 있는 함수는 read() 함수 하나밖에 없다.<br>
+open() 함수가 제대로 동작을 했다면 read() 함수가 block을 하지 않았을 것이라는 점과,<br>
+사용자로부터의 문자열 입력이 있은 후에 block이 풀렸다는 점에서 fd 값에 0이 들어갔을 거라고 유추해볼 수 있다.
+
+fd에 값이 들어가는 17라인을 잘 살펴보자.
+
+![wiki](resource/line17.png)
+
+가장 먼저 open() 함수가 실행되고, open() 함수의 반환값을 fd에 기록하고 그 다음에 0과 비교하여 예외처리를 할것 같지만,<br>
+애석하게도 assign(=) 연산자는 c 언어에서 우선순위가 가장 낮은 연산자 중의 하나이다.<br>
+즉, open() 함수의 반환값이 0보다 작은지 비교하고 그 결과(논리값)가 fd에 기록된다.
+
+실제로 해당 경로에 password 파일이 존재하므로, open()함수는 0보다 큰 핸들값을 반환했을 것이고,<br>
+이 핸들값이 0보다 작은지 비교했기 때문에 최종적으로 fd에는 false를 의미하는 0이 기록되었을 것이다.
+
+자, 이제 block의 이유를 알았으니 41라인에 닿을 수 있도록 문자열을 입력해주자.<br>
+34라인이 실행되기 전에 24라인에서 10개의 글자를 pw_buf에 저장할 수 있다.<br>
+대충 b를 열개 넣어본다. (a를 안넣고 b를 넣은 이유는 각자 생각해 보는걸로)
+
+이후, 35라인에서 scanf() 함수를 통해 pw_buf2에 두번째 문자열을 넣을 수 있다.<br>
+여기서 넣은 문자열은 38라인에서 xor() 함수를 거치게 되는데, xor() 함수를 살펴보면<br>
+문자열을 byte 단위로 1과 xor 하도록 되어있다.<br>
+영문자 b는 ascii 코드로 0x62이므로, 0x63인 c를 넣어줘야 1과 xor 했을 때 b를 얻을 수 있다.
+
+두번째 입력으로 c 열개를 넣어주면 40라인의 if 문을 통과하여 flag를 얻을 수 있다.
+
+![wiki](resource/run2.png)
+
+Flag : <b>Mommy, the operator priority always confuses me :(</b>

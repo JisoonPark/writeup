@@ -1,0 +1,90 @@
+# input
+
+**Category:** Pwnable
+
+**Source:** pwnable.kr
+
+**Points:** 40
+
+**Author:** Jisoon Park(js00n.park)
+
+**Description:** 
+
+> Mom? how can I pass my input to a computer program?
+
+## Write-up
+
+input 문제는 특별한 보안 취약점을 묻는 문제가 아니다.<br>
+소스 코드를 보면, 바이너리에 다양한 방법으로 입력을 주는 방법에 대한 지식을 묻고 있는 것을 알 수 있다.
+
+![wiki](resource/code.png)
+
+총 다섯개의 stage를 돌파하면 flag 값을 주게 되어 있는데, <br>
+exploit을 C로 구현할 경우 좀 더 쉬워지는 stage도 있지만<br>
+앞으로 문제를 풀어나가려면 python에 익숙해지는 과정이 필요하니<br>
+조금 어렵더라도 python을 이용해서 문제를 풀어보기를 추천한다.
+
+취약점 내용이 아닌 관계로, 각 stage를 일일이 설명하지 않고 문제 해결을 위한 코드를 첨부한다.
+
+```python
+import subprocess
+import os, sys, struct
+import socket, time
+
+#stage 1
+cmd = ["/home/input2/input"];
+
+for i in range(99):
+	cmd = cmd + ["A"];
+cmd[65] = "";
+cmd[66] = "\x20\x0a\x0d";
+cmd[67] = "25009";
+
+#stage 2: creat pipe
+(r0, w0) = os.pipe();
+(r2, w2) = os.pipe();
+
+#stage 3 
+my_env = os.environ.copy();
+my_env["\xde\xad\xbe\xef"] = "\xca\xfe\xba\xbe";
+
+#stage 4
+f = open("\x0a", "w");
+f.write("\x00\x00\x00\x00");
+f.close();
+
+#launch command
+p = subprocess.Popen(cmd, stdin=r0, stderr=r2, env=my_env);
+
+#stage 2: send message by pipe
+os.write(w0, buffer("\x00\x0a\x00\xff"));
+os.close(r0);
+os.close(w0);
+
+os.write(w2, buffer("\x00\x0a\x02\xff"));
+os.close(r2);
+os.close(w2);
+
+#stage 5
+time.sleep(1);			#give time to perpare server socket
+host="127.0.0.1";
+port=25009;
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM);
+try:
+	s.connect((host, port));
+
+	s.send(buffer("\xde\xad\xbe\xef"));
+	s.close();
+except Exception as e:
+	print('Connection failed to server ' + host);
+
+time.sleep(1);
+p.poll();
+```
+
+/tmp 디렉토리에 적당한 디렉토리를 생성하여 위 코드를 넣고, flag에 symbolic link를 건 뒤 실행하면<br>
+flag를 얻을 수 있다.
+
+![wiki](resource/run.png)
+
+Flag : <b>Mommy! I learned how to pass various input in Linux :)</b>
