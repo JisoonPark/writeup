@@ -37,7 +37,7 @@ $ ./EasyHaskell < in
 "/WGx9=ddP@f?nYp5"
 ```
 ELF 파일을 objdump 를 통해서 보면 굉장히 많은 Symbol이 검색되고 ghc를 통해서 빌드된 Haskell 로 작성한 코드임을 할 수 있다.  
-확신은 없지만 <main>:0x040ad51 --> <hs_main>:0x047d8a0로 호출 하는 코드가 확인된다. 분석을 위해 Gdb로 hs_main 부터 Step으로 따라가 보면, <rts_evalLazyIO>:0x47d90b를 실행한 후부터 SIG_TRAP이 발생하면서 GDB를 사용할 수가 없게 된다. anti-debug 가 적용된 것으로 추측 된다. 
+확신은 없지만 <main>:0x040ad51 --> &lt;hs_main&gt;:0x047d8a0로 호출 하는 코드가 확인된다. 분석을 위해 Gdb로 hs_main 부터 Step으로 따라가 보면, &lt;rts_evalLazyIO&gt;:0x47d90b를 실행한 후부터 SIG_TRAP이 발생하면서 GDB를 사용할 수가 없게 된다. anti-debug 가 적용된 것으로 추측 된다. 
 
 따라서 Reversing 만으로는 정확히 어떻게 결과가 나오는지 알 수없다. Decompile을해도 너무 많은 심볼이 나와서 어떤 부분이 Flag에 관련된 코드이고 어떤 부분이 Haskell에 있는 기본 심볼인지 파악이 쉽지 않다. 
 
