@@ -3,7 +3,7 @@ layout: post
 title: EASY_CrackMe
 category: Reversing
 rpath: /resource/EASY_CrackMe
-tag: [] 
+tag: [IDA] 
 ---
 
 **Category:** Reversing
