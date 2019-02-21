@@ -2,7 +2,7 @@
 layout: post
 title: webhacking.kr 054
 category: Web
-rpath: /resource/webhacking.054
+rpath: /resource/webhacking.kr_054
 tag: [] 
 ---
 

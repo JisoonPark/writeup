@@ -2,7 +2,7 @@
 layout: post
 title: webhacking.kr 047
 category: Web
-rpath: /resource/webhacking.047
+rpath: /resource/webhacking.kr_047
 tag: [email, header] 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: webhacking.kr 038
 category: Web
-rpath: /resource/webhacking.038
+rpath: /resource/webhacking.kr_038
 tag: [data_injection] 
 ---
 

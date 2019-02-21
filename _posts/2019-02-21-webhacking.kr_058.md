@@ -2,7 +2,7 @@
 layout: post
 title: webhacking.kr 058
 category: Web
-rpath: /resource/webhacking.058
+rpath: /resource/webhacking.kr_058
 tag: [flash, decompile] 
 ---
 
