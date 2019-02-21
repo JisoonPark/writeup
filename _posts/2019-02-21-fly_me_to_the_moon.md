@@ -3,7 +3,7 @@ layout: post
 title: fly me to the moon
 category: Web
 rpath: /resource/fly_me_to_the_moon
-tag: [javascript, beautifier] 
+tag: [javascript, obfuscation, beautifier, burp_suite] 
 ---
 
 **Category:** Web

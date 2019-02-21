@@ -3,7 +3,7 @@ layout: post
 title: login filtering
 category: Web
 rpath: /resource/login_filtering
-tag: [php, mysql] 
+tag: [php, mysql, case_sensitivity] 
 ---
 
 **Category:** Web
