@@ -40,7 +40,7 @@ PCAP 파일이 주어졌다. wireshark로 열어보자.
 
 webserver라고 했으니 80번 포트로의 연결을 받아들이는 IP를 찾아보자.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/server_ip.png)
+![img]({{page.rpath|prepend:site.baseurl}}/server_ip.png)
 
 거의 맨 위에 **192.168.11.4**가 나오는걸 알 수 있다. 넣어보니 맞다고 한다.
 
@@ -94,7 +94,7 @@ webserver라고 했으니 80번 포트로의 연결을 받아들이는 IP를 찾
 
 Ping Request/Reply인데, 일반적인 Ping과는 다르게 Payload가 있다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/ping_payload.png)
+![img]({{page.rpath|prepend:site.baseurl}}/ping_payload.png)
 
 이 값들을 decoding 해보자. 중간에 e라는 문자가 들어있는 걸로 봐서는 hex 데이터인것 같다.
 
@@ -104,7 +104,7 @@ Ping Request/Reply인데, 일반적인 Ping과는 다르게 Payload가 있다.
 
 그렇다면 마지막에 있는 데이터는 16 바이트 길이인 것이 md5sum인 것 같다. submit 해보니 맞았다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/file_data.png)
+![img]({{page.rpath|prepend:site.baseurl}}/file_data.png)
 
 1 : **totally_nothing.pdf**  
 2 : **6156eab6691f32b8350c45b3fc4aadc1**
@@ -124,15 +124,15 @@ Ping Request/Reply인데, 일반적인 Ping과는 다르게 Payload가 있다.
 
 DNS, ICMP, HTTP 프로토콜을 이용해서 전송되는 데이터들을 살펴보면, 각자의 방법으로 공통된 유형의 데이터를 보내고 있다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/http_data.png)
+![img]({{page.rpath|prepend:site.baseurl}}/http_data.png)
 
 http 포로토콜은 POST payload를 이용해서 전송하고 있다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/icmp_data.png)
+![img]({{page.rpath|prepend:site.baseurl}}/icmp_data.png)
 
 ICMP 프로토콜은 optional field인 message payload를 이용해서 전송한다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/dns_data.png)
+![img]({{page.rpath|prepend:site.baseurl}}/dns_data.png)
 
 DNS 프로토콜은 DNS query 메세지에 데이터를 실어보낸다.
 
@@ -146,7 +146,7 @@ wireshark로 각 프로토콜별로 메세지를 필터링하여 JSON 형태로 
 
 tar를 풀어주자 최종적으로 stuff라는 elf 파일이 생성되었다.
 
-![img]({{page.rpath|prepend:site.baseurl}}/").replace("]({{site.github.master}}{{page.rpath}}/output.png)
+![img]({{page.rpath|prepend:site.baseurl}}/output.png)
 
 1 : **gzip**  
 2 : **stuff.elf**
