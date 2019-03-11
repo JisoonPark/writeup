@@ -33,9 +33,8 @@ type: page
 
 <script>
   var tree = [
-    {% for category in site.categories %}
-    {
-      text="{{category | first}}",
+    {% for category in site.categories %}{
+      text: "{{category | first}}",
       nodes: [
         {% for posts in category %}
           {% for post in posts %}
