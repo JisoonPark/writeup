@@ -5,14 +5,21 @@ permalink: /category/
 type: page
 ---
 
+<style type="test/css">
+table {
+   border:0px;
+   background-color:white;
+}
+</style>
+
 <div class="page clearfix">
   <div class="left">
     <h1>{{page.title}}</h1>
     <hr>
 
-    <table border="0" background="white">
+    <table>
       <tr>
-        <td width="33%" valign="top">
+        <td width="40%" valign="top">
       <h2>Input</h2>
       <!-- <form> -->
         <div class="form-group">
@@ -41,7 +48,7 @@ type: page
         <button type="button" class="btn btn-default" id="btn-clear-search">Clear</button>
       <!-- </form> -->
   </td>
-  <td width="66%" valign="top">
+  <td width="50%" valign="top">
       <h2>Results</h2>
       <div id="search-output"></div>
   </td>
