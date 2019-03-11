@@ -48,8 +48,7 @@ type: page
           {% endfor %}
         {% endfor %}
       ]
-      {% unless forloop.last %},{% endunless %}
-    }
+    }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
 
