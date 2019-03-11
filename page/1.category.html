@@ -9,10 +9,45 @@ type: page
   <div class="left">
     <h1>{{page.title}}</h1>
     <hr>
-    <div id="tree"></div>
+    <div class="col-sm-4">
+      <h2>Input</h2>
+      <!-- <form> -->
+        <div class="form-group">
+          <label for="input-search" class="sr-only">Search Tree:</label>
+          <input type="input" class="form-control" id="input-search" placeholder="Type to search..." value="">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-ignore-case" value="false">
+            Ignore Case
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-exact-match" value="false">
+            Exact Match
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-reveal-results" value="false">
+            Reveal Results
+          </label>
+        </div>
+        <button type="button" class="btn btn-success" id="btn-search">Search</button>
+        <button type="button" class="btn btn-default" id="btn-clear-search">Clear</button>
+      <!-- </form> -->
+    </div>
+    <div class="col-sm-4">
+      <h2>Tree</h2>
+      <div id="treeview-searchable" class=""></div>
+    </div>
+    <div class="col-sm-4">
+      <h2>Results</h2>
+      <div id="search-output"></div>
+    </div>
   </div>
 </div>
-
 
 <script>
   var tree = [
@@ -39,4 +74,35 @@ type: page
     showBorder: false,
     enableLinks: true
   });
+
+  var $searchableTree = $('#treeview-searchable').treeview({
+    data: defaultData,
+  });
+
+  var search = function(e) {
+    var pattern = $('#input-search').val();
+    var options = {
+      ignoreCase: $('#chk-ignore-case').is(':checked'),
+      exactMatch: $('#chk-exact-match').is(':checked'),
+      revealResults: $('#chk-reveal-results').is(':checked')
+    };
+    var results = $searchableTree.treeview('search', [ pattern, options ]);
+
+    var output = '<p>' + results.length + ' matches found</p>';
+    $.each(results, function (index, result) {
+      output += '<p>- ' + result.text + '</p>';
+    });
+    $('#search-output').html(output);
+  }
+
+  $('#btn-search').on('click', search);
+  $('#input-search').on('keyup', search);
+
+  $('#btn-clear-search').on('click', function (e) {
+    $searchableTree.treeview('clearSearch');
+    $('#input-search').val('');
+    $('#search-output').html('');
+  });
+
+
 </script>
