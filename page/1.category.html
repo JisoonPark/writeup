@@ -66,6 +66,12 @@ table {
     {% for category in site.categories %}{
       text: "{{category | first}}",
       selectable: false,
+      state: {
+        checked: false,
+        disabled: false,
+        expanded: false,
+        selected: false
+      },
       nodes: [
         {% for posts in category %}
           {% for post in posts %}
@@ -121,13 +127,13 @@ table {
     var $cat = window.location.hash.slice(1);
   }
 
-  $('#treeview-searchable').on('nodeCollapsed', function(event, node) {
-    alert(node.text);
-    if (node.text == $cat) {
-      alert($cat);
-    }
+  var catNode = $searchableTree.treeview('search', [ $cat, {
+    ignoreCase: false,     // case insensitive
+    exactMatch: true,    // like or equals
+    revealResults: false,  // reveal matching nodes
+  }]);
+
+  $.each(results, function (index, node) {
+    $searchableTree.treeview('expandNode', [ node, { levels: 2, silent: true } ]);
   });
-
-  $searchableTree.treeview('collapseAll', { silent: true });
-
 </script>
