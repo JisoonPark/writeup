@@ -122,10 +122,12 @@ table {
   }
 
   $('#treeview-searchable').on('nodeCollapsed', function(event, node) {
+    alert(node.text);
     if (node.text == $cat) {
       alert($cat);
     }
   });
 
   $searchableTree.treeview('collapseAll', { silent: true });
+
 </script>
