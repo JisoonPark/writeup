@@ -38,19 +38,19 @@ type: page
       text="{{category | first}}",
       nodes: [
         {% for posts in category %}
-        {% for post in posts %}
-        {% if post.url %}
-        {
-          text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>{{ post.title }}",
-          href: "{{ post.url | prepend: site.url }}"
-        }
-        {% endif %}
-        {% unless forloop.last %},{% endunless %}
-        {% endfor %}
-        {% endfor %}
-        {% unless forloop.last %},{% endunless %}
-        {% endfor %}
+          {% for post in posts %}
+            {% if post.url %}
+            {
+              text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>{{ post.title }}",
+              href: "{{ post.url | prepend: site.url }}"
+            }
+            {% endif %}
+          {% endfor %}  //post
+          {% unless forloop.last %},{% endunless %}
+        {% endfor %}  //posts
       ]
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}  //category
     }
   ]
 
