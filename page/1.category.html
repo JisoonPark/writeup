@@ -102,7 +102,8 @@ table {
 
     var output = '<p>' + results.length + ' matches found</p>';
     $.each(results, function (index, result) {
-      output += '<p>- <a href="' + result.href + '">' + result.text + '</a></p>';
+      if (typeof myVar !== 'undefined')
+        output += '<p>- <a href="' + result.href + '">' + result.text + '</a></p>';
     });
     $('#search-output').html(output);
   }
@@ -116,6 +117,15 @@ table {
     $('#search-output').html('');
   });
 
-  $searchableTree.treeview('collapseAll', { silent: true });
+  if (window.location.hash.length > 2) {
+    var $cat = window.location.hash.slice(1);
+  }
 
+  $('#treeview-searchable').on('nodeCollapsed', function(event, node) {
+    if (node.text == $cat) {
+      alert($cat);
+    }
+  });
+
+  $searchableTree.treeview('collapseAll', { silent: true });
 </script>
