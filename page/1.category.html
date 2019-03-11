@@ -108,7 +108,7 @@ table {
 
     var output = '<p>' + results.length + ' matches found</p>';
     $.each(results, function (index, result) {
-      if (typeof myVar !== 'undefined')
+      if (typeof result.href !== 'undefined')
         output += '<p>- <a href="' + result.href + '">' + result.text + '</a></p>';
     });
     $('#search-output').html(output);
