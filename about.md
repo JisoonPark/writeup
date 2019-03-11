@@ -4,27 +4,17 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  If you want to know about me, matta, please visit <a href="https://me.matta.kr">https://me.matta.kr</a>.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+각종 CTF 및 wargame 문제 들에 대한 writeup을 모아두는 공간입니다.
 
-There are currently two themes built on Poole:
+보안 스터디 하시는 분들에게 조금이나마 도움이 되기를 바라는 마음으로 public으로 운영하고 있습니다.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+대부분 flag까지 적어두고 있으나, 일부 flag를 공개하지 않는 wargame 문제들도 있습니다.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+blog 내용에 오류가 있거나, writeup에 이해가 안가는 부분이 있으신 분은 연락 주세요.
 
-## Setup
 
-Some fun facts about the setup of this project include:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+이 블로그는 github pages 기반으로 운영되고 있습니다.
