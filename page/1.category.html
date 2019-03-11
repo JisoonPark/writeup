@@ -26,10 +26,10 @@ type: page
       {% endfor %}
       {% endfor %}
     </ul>
+    <div id="tree"></div>
   </div>
 </div>
 
-<div id="tree"></div>
 
 <script>
   var tree = [
@@ -40,7 +40,7 @@ type: page
           {% for post in posts %}
             {% if post.url %}
             {
-              text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>{{ post.title }}",
+              text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>&nbsp;&nbsp;{{ post.title }}",
               href: "{{ post.url | prepend: site.url }}"
             },
             {% endif %}
@@ -53,6 +53,7 @@ type: page
 
   $('#tree').treeview({
     data: tree,
-    showBorder: false
+    showBorder: false,
+    enableLinks: true
   });
 </script>
