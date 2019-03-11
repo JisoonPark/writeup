@@ -66,7 +66,8 @@ table {
     {% for category in site.categories %}{
       text: "{{category | first}}",
       selectable: false,
-      showIcon: true
+      icon: "glyphicon glyphicon-stop",
+      selectedIcon: "glyphicon glyphicon-stop",
       state: {
         checked: false,
         disabled: false,
