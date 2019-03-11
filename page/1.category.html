@@ -66,6 +66,9 @@ table {
     {% for category in site.categories %}{
       text: "{{category | first}}",
       selectable: false,
+      icon: "glyphicon glyphicon-stop",
+      selectedIcon: "glyphicon glyphicon-stop",
+      showIcon: true
       state: {
         checked: false,
         disabled: false,
@@ -79,8 +82,6 @@ table {
             {
               text: "[{{ post.source }}]&nbsp;<b>{{ post.title }}</b>",
               href: "{{ post.url | prepend: site.url }}",
-              icon: "glyphicon glyphicon-stop",
-              selectedIcon: "glyphicon glyphicon-stop",
               selectable: true,
             },
             {% endif %}
