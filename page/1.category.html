@@ -45,8 +45,10 @@ type: page
           href: "{{ post.url | prepend: site.url }}"
         },
         {% endif %}
+        {% unless forloop.last %},{% endunless %}
         {% endfor %}
         {% endfor %}
+        {% unless forloop.last %},{% endunless %}
         {% endfor %}
       ]
     }
