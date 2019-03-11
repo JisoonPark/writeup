@@ -65,13 +65,17 @@ table {
   var tree = [
     {% for category in site.categories %}{
       text: "{{category | first}}",
+      selectable: false,
       nodes: [
         {% for posts in category %}
           {% for post in posts %}
             {% if post.url %}
             {
               text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>&nbsp;&nbsp;{{ post.title }}",
-              href: "{{ post.url | prepend: site.url }}"
+              href: "{{ post.url | prepend: site.url }}",
+              icon: "glyphicon glyphicon-stop",
+              selectedIcon: "glyphicon glyphicon-stop",
+              selectable: true,
             },
             {% endif %}
           {% endfor %}
@@ -112,5 +116,6 @@ table {
     $('#search-output').html('');
   });
 
+  $searchableTree.treeview('collapseAll', { silent: true });
 
 </script>
