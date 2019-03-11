@@ -77,7 +77,7 @@ table {
           {% for post in posts %}
             {% if post.url %}
             {
-              text: "[{{ post.source }}]&nbsp;**{{ post.title }}**",
+              text: "[{{ post.source }}]&nbsp;<b>{{ post.title }}</b>",
               href: "{{ post.url | prepend: site.url }}",
               icon: "glyphicon glyphicon-stop",
               selectedIcon: "glyphicon glyphicon-stop",
