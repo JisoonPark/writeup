@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 020
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_020
 tag: [javascript, burp_suite] 

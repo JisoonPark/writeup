@@ -1,6 +1,7 @@
 ---
 layout: post
 title: already got
+source: "wargame.kr"
 category: Web
 rpath: /resource/already_got
 tag: [http, header] 

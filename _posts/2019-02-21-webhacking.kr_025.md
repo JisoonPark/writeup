@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 025
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_025
 tag: [file_include, php, null_terminaor] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 004
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_004
 tag: [base64, SHA-1] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 027
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_027
 tag: [sql_injection, like] 

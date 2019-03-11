@@ -1,6 +1,7 @@
 ---
 layout: post
 title: login filtering
+source: "wargame.kr"
 category: Web
 rpath: /resource/login_filtering
 tag: [php, mysql, case_sensitivity] 

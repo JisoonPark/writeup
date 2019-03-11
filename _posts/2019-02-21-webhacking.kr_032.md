@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 032
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_032
 tag: [burp_suite, repeater] 

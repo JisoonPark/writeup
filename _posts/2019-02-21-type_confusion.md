@@ -1,6 +1,7 @@
 ---
 layout: post
 title: type confusion
+source: "wargame.kr"
 category: Web
 rpath: /resource/type_confusion
 tag: [php, type_confusion] 

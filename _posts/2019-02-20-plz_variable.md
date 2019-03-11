@@ -1,6 +1,7 @@
 ---
 layout: post
 title: plz variable
+source: "wargame.kr"
 category: Misc
 rpath: /resource/plz_variable
 tag: [polynomial, z3] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 026
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_026
 tag: [url_encode] 

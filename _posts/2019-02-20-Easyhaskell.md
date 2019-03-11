@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Easyhaskell
+source: "Samsung CTF 2017 Quals."
 category: Reversing
 rpath: /resource/Easyhaskell
 tag: [base64, brute_force] 
@@ -8,7 +9,7 @@ tag: [base64, brute_force]
 
 **Category:** Reversing
 
-**Source:** Samsung CTF 2017 Quals
+**Source:** Samsung CTF 2017 Quals.
 
 **Points:** 150
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Crypto Crackme Basic
+source: "wargame.kr"
 category: Reversing
 rpath: /resource/Crypto_Crackme_Basic
 tag: [.net] 
