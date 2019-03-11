@@ -133,7 +133,7 @@ table {
     revealResults: false,  // reveal matching nodes
   }]);
 
-  $.each(results, function (index, node) {
+  $.each(catNode, function (index, node) {
     $searchableTree.treeview('expandNode', [ node, { levels: 2, silent: true } ]);
   });
 </script>
