@@ -43,15 +43,14 @@ type: page
             {
               text: "<time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>{{ post.title }}",
               href: "{{ post.url | prepend: site.url }}"
-            }
+            },
             {% endif %}
-          {% endfor %}  //post
-          {% unless forloop.last %},{% endunless %}
-        {% endfor %}  //posts
+          {% endfor %}
+        {% endfor %}
       ]
       {% unless forloop.last %},{% endunless %}
     }
-    {% endfor %}  //category
+    {% endfor %}
   ]
 
   $('#tree').treeview({
