@@ -61,6 +61,7 @@ type: page
       text: "{{category | first}}",
       selectable: false,
       href: "javascript:void(0);",
+      tags: ["{{ category | last | size }}"],
       state: {
         checked: false,
         disabled: false,

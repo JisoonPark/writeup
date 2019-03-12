@@ -61,7 +61,7 @@ type: page
       text: "{{tag | first}}",
       selectable: false,
       href: "javascript:void(0);",
-      tags: ["<span id ='{{tag | first}}'></span>"],
+      tags: ["<span id ='{{tag | first}}'></span>{{ tag | last | size }}"],
       state: {
         checked: false,
         disabled: false,
