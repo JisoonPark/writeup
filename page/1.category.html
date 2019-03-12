@@ -77,7 +77,7 @@ type: page
           {% for post in posts %}
             {% if post.url %}
             {
-              text: "[{{ post.source }}]" + delimiter + "<b>{{ post.title }}</b>",
+              text: "\"[{{ post.source }}]" + delimiter + "<b>{{ post.title }}</b>\"",
               href: "{{ post.url | prepend: site.url }}",
               selectable: true,
             },
