@@ -100,10 +100,14 @@ type: page
     var results = $searchableTree.treeview('search', [ pattern, options ]);
 
     var output = '<p>' + results.length + ' matches found</p>';
+    var cnt = 0;
     $.each(results, function (index, result) {
       if (result.href == "javascript:void(0);")
-        output += '<p>- <a href="#' + result.text.replace(/(<([^>]+)>)/ig,""); + '">' + result.text + '</a></p>';
+        curtag = result.text.replace(/(<([^>]+)>)/ig,"");
+        output += '<p>- <a href="#' + curtag + '">' + curtag + '</a></p>';
+        cnt += 1;
     });
+    output = '<p>' + cnt + ' matches found</p>' + output
     $('#search-output').html(output);
   }
 
