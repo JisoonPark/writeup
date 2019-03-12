@@ -58,10 +58,10 @@ type: page
 <script>
   var tree = [
     {% for tag in site.tags %}{
-      text: "<span id='{{tag | first}}'>{{tag | first}}</span>",
+      text: "{{tag | first}}",
       selectable: false,
       href: "javascript:void(0);",
-      tags: ['{{tag | first}}'],
+      tags: ["<span id ='{{tag | first}}'></span>"],
       state: {
         checked: false,
         disabled: false,
