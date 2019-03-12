@@ -101,7 +101,7 @@ type: page
 
     var output = '<p>' + results.length + ' matches found</p>';
     $.each(results, function (index, result) {
-      if (typeof result.href == "javascript:void(0);")
+      if (result.href == "javascript:void(0);")
         output += '<p>- <a href="#' + result.text.replace(/(<([^>]+)>)/ig,""); + '">' + result.text + '</a></p>';
     });
     $('#search-output').html(output);
