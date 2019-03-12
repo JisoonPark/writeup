@@ -59,6 +59,7 @@ type: page
     {% for category in site.categories %}{
       text: "{{category | first}}",
       selectable: false,
+      href: "javascript:void(0);",
       state: {
         checked: false,
         disabled: false,
