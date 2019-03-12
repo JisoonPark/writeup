@@ -61,6 +61,7 @@ type: page
       text: "{{category | first}}",
       selectable: false,
       href: "javascript:void(0);",
+      tags: [category.posts.length],
       state: {
         checked: false,
         disabled: false,
@@ -87,7 +88,8 @@ type: page
   var $searchableTree = $('#treeview-searchable').treeview({
     data: tree,
     showBorder: false,
-    enableLinks: true
+    enableLinks: true,
+    showTags: true
   });
 
   var search = function(e) {
