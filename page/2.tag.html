@@ -103,9 +103,11 @@ type: page
     var cnt = 0;
     $.each(results, function (index, result) {
       if (result.href == "javascript:void(0);")
+      {
         curtag = result.text.replace(/(<([^>]+)>)/ig,"");
         output += '<p>- <a href="#' + curtag + '">' + curtag + '</a></p>';
         cnt += 1;
+      }
     });
     output = '<p>' + cnt + ' matches found</p>' + output
     $('#search-output').html(output);
