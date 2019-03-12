@@ -28,7 +28,7 @@
     <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
   </nav>
   <div>
-    <div class="sidebar-nav-item">Category</div>
+    <a class="sidebar-nav-item" href="{{ root_url | prepend: site.baseurl }}/{{ site.category_dir }}#">Category</a>
     <nav class="content-ul">
       {% for category in site.categories %}
       <a href="{{ root_url | prepend: site.baseurl }}/{{ site.category_dir }}#{{ category | first }}"
