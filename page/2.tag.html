@@ -13,7 +13,7 @@ type: page
     <table width="90%" style="border:hidden">
       <tr style="background-color:transparent;">
         <td width="40%" valign="top" style="background-color:transparent;">
-      <h2>Search</h2>
+      <h2>Search Tags</h2>
       <!-- <form> -->
         <div class="form-group">
           <label for="input-search" class="sr-only">Search Tree:</label>
@@ -58,7 +58,7 @@ type: page
 <script>
   var tree = [
     {% for tag in site.tags %}{
-      text: "{{tag | first}}",
+      text: "<span id='{{tag | first}}'>{{tag | first}}</span>",
       selectable: false,
       href: "javascript:void(0);",
       state: {
@@ -101,8 +101,8 @@ type: page
 
     var output = '<p>' + results.length + ' matches found</p>';
     $.each(results, function (index, result) {
-      if (typeof result.href !== 'undefined')
-        output += '<p>- <a href="' + result.href + '">' + result.text + '</a></p>';
+      if (typeof result.href == "javascript:void(0);")
+        output += '<p>- <a href="#' + result.text.replace(/(<([^>]+)>)/ig,""); + '">' + result.text + '</a></p>';
     });
     $('#search-output').html(output);
   }
