@@ -61,6 +61,7 @@ type: page
       text: "<span id='{{tag | first}}'>{{tag | first}}</span>",
       selectable: false,
       href: "javascript:void(0);",
+      tags: ['{{tag | first}}'],
       state: {
         checked: false,
         disabled: false,
@@ -87,7 +88,8 @@ type: page
   var $searchableTree = $('#treeview-searchable').treeview({
     data: tree,
     showBorder: false,
-    enableLinks: true
+    enableLinks: true,
+    showTags: true
   });
 
   var search = function(e) {
@@ -133,6 +135,7 @@ type: page
   }]);
 
   $.each(tagNode, function (index, node) {
+    if (node.text.replace(/(<([^>]+)>)/ig,"") == 
     $searchableTree.treeview('expandNode', [ node, { levels: 2, silent: true } ]);
   });
 </script>
