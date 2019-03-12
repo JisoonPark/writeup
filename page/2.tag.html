@@ -56,6 +56,10 @@ type: page
 </div>
 
 <script>
+  var delimiter='&nbsp';
+  if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
+    delimiter="<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+
   var tree = [
     {% for tag in site.tags %}{
       text: "{{tag | first}}",
@@ -73,7 +77,7 @@ type: page
           {% for post in posts %}
             {% if post.url %}
             {
-              text: "[{{ post.source }}]&nbsp;<b>{{ post.title }}</b>",
+              text: "[{{ post.source }}]" + delimiter + "<b>{{ post.title }}</b>",
               href: "{{ post.url | prepend: site.url }}",
               selectable: true,
             },

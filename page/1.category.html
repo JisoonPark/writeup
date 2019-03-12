@@ -58,7 +58,7 @@ type: page
 <script>
   var delimiter='&nbsp';
   if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
-    delimiter="<br>&nbsp;&nbsp;&nbsp;&nbsp;"
+    delimiter="<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
 
   var tree = [
     {% for category in site.categories %}{
