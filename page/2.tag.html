@@ -99,7 +99,7 @@ type: page
     };
     var results = $searchableTree.treeview('search', [ pattern, options ]);
 
-    var output = '<p>' + results.length + ' matches found</p>';
+    var output = '';
     var cnt = 0;
     $.each(results, function (index, result) {
       if (result.href == "javascript:void(0);")
