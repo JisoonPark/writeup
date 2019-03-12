@@ -125,7 +125,7 @@ int __fastcall func2(__int64 a1, char *a2, const char *a3)
     v11 += 2;
   }
   puts("Your Skills are really great. Flag is:");
-  return printf("pctf{\%s}\n", a1);
+  return printf("pctf{% raw  %}{%s}{% endraw %}\n", a1);
 }
 ```
 
