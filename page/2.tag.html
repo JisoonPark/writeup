@@ -106,8 +106,7 @@ type: page
     $.each(results, function (index, result) {
       if (result.href == "javascript:void(0);")
       {
-        curtag = result.text.replace(/(<([^>]+)>)/ig,"");
-        output += '<p>- <a href="#' + curtag + '">' + curtag + '</a></p>';
+        output += '<p>- <a href="#' + result.text + '">' + result.text + '</a></p>';
         cnt += 1;
       }
     });
