@@ -42,7 +42,7 @@
     </nav>
   </div>
   <div>
-    <div class="sidebar-nav-item">Tags</div>
+    <a class="sidebar-nav-item" href="{{ root_url | prepend: site.baseurl }}/{{ site.tag_dir }}#">Tags</a>
     <div class="tags-cloud">
       <div>
         {% assign first = site.tags.first %}
