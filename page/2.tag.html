@@ -135,7 +135,6 @@ type: page
   }]);
 
   $.each(tagNode, function (index, node) {
-    if (node.text.replace(/(<([^>]+)>)/ig,"") == 
     $searchableTree.treeview('expandNode', [ node, { levels: 2, silent: true } ]);
   });
 </script>
