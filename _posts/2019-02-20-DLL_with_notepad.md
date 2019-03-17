@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DLL with notepad
+source: "wargame.kr"
 category: Reversing
 rpath: /resource/DLL_with_notepad
 tag: [dlopen, ollydbg] 

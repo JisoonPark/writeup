@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Very Smooth
+source: "SECCON 2017 Quals."
 category: Crypto
 rpath: /resource/Very_Smooth
 tag: [RSA, factorization, pcap, wireshark] 

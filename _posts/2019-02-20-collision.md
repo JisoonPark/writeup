@@ -1,6 +1,7 @@
 ---
 layout: post
 title: collision
+source: "pwnable.kr"
 category: Pwnable
 rpath: /resource/collision
 tag: [hash, collision] 

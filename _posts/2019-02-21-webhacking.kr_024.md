@@ -1,6 +1,7 @@
 ---
 layout: post
 title: webhacking.kr 024
+source: "webhacking.kr"
 category: Web
 rpath: /resource/webhacking.kr_024
 tag: [cookie, str_replace] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EASY_CrackMe
+source: "wargame.kr"
 category: Reversing
 rpath: /resource/EASY_CrackMe
 tag: [IDA] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: wanna_smile
+source: "HDCON 2017 Quals."
 category: Forensic
 rpath: /resource/wanna_smile
 tag: [ransomeware, openssl] 
@@ -8,7 +9,7 @@ tag: [ransomeware, openssl]
 
 **Category:** Forensic
 
-**Source:** HDCON 2017 Quals(September)
+**Source:** HDCON 2017 Quals.(September)
 
 **Points:** 200
 

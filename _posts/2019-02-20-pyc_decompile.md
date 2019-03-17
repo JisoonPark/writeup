@@ -1,6 +1,7 @@
 ---
 layout: post
 title: pyc decompile
+source: "wargame.kr"
 category: Reversing
 rpath: /resource/pyc_decompile
 tag: [pyc] 

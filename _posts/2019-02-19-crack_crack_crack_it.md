@@ -1,6 +1,7 @@
 ---
 layout: post
 title: crack crack crack it
+source: "wargame.kr"
 category: Crypto
 rpath: /resource/crack_crack_crack_it
 tag: [john_the_ripper, md5crypt, mask] 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DB is really GOOD
+source: "wargame.kr"
 category: Web
 rpath: /resource/DB_is_really_GOOD
 tag: [db] 

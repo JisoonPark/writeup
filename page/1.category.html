@@ -9,22 +9,135 @@ type: page
   <div class="left">
     <h1>{{page.title}}</h1>
     <hr>
-    <ul>
-      {% for category in site.categories %}
-      <h2 id="{{category | first}}">{{category | first}}</h2>
-      {% for posts in category %}
-      {% for post in posts %}
-      {% if post.url %}
-      <li>
-        <time>
-          {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-        </time>
-        <a class="title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% endfor %}
-      {% endfor %}
-    </ul>
+
+    <table width="90%" style="border:hidden">
+      <tr style="background-color:transparent;">
+        <td width="40%" valign="top" style="background-color:transparent;">
+      <h2>Search Posts</h2>
+      <!-- <form> -->
+        <div class="form-group">
+          <label for="input-search" class="sr-only">Search Tree:</label>
+          <input type="input" class="form-control" id="input-search" placeholder="Type to search..." value="">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-ignore-case" value="false">
+            Ignore Case
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-exact-match" value="false">
+            Exact Match
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" class="checkbox" id="chk-reveal-results" value="false">
+            Reveal Results
+          </label>
+        </div>
+        <button type="button" class="btn btn-success" id="btn-search">Search</button>
+        <button type="button" class="btn btn-default" id="btn-clear-search">Clear</button>
+      <!-- </form> -->
+  </td>
+  <td width="50%" valign="top" style="background-color:transparent;">
+      <h2>Results</h2>
+      <div id="search-output"></div>
+  </td>
+</tr>
+</table>
+    <div class="col-sm-12">
+      <hr>
+      <h2>Posts</h2>
+      <div id="treeview-searchable" class=""></div>
+    </div>
   </div>
 </div>
+
+<script>
+  var delimiter='&nbsp';
+  if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
+    delimiter="<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+
+  var tree = [
+    {% for category in site.categories %}{
+      text: "{{category | first}}",
+      selectable: false,
+      href: "javascript:void(0);",
+      tags: ["{{ category | last | size }}"],
+      state: {
+        checked: false,
+        disabled: false,
+        expanded: false,
+        selected: false
+      },
+      nodes: [
+        {% for posts in category %}
+          {% for post in posts %}
+            {% if post.url %}
+            {
+              text: "[{{ post.source }}]" + delimiter + "<b>{{ post.title }}</b>",
+              href: "{{ post.url | prepend: site.url }}",
+              selectable: true,
+            },
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+
+  var $searchableTree = $('#treeview-searchable').treeview({
+    data: tree,
+    showBorder: false,
+    enableLinks: true,
+    showTags: true
+  });
+
+  var search = function(e) {
+    var pattern = $('#input-search').val();
+    var options = {
+      ignoreCase: $('#chk-ignore-case').is(':checked'),
+      exactMatch: $('#chk-exact-match').is(':checked'),
+      revealResults: $('#chk-reveal-results').is(':checked')
+    };
+    var results = $searchableTree.treeview('search', [ pattern, options ]);
+
+    var output = '';
+    var cnt = 0;
+    $.each(results, function (index, result) {
+      if (result.href !== "javascript:void(0);")
+      {
+        output += '<p>- <a href="' + result.href + '">' + result.text + '</a></p>';
+        cnt += 1;
+      }
+    });
+    output = '<p>' + cnt + ' matches found</p>' + output;
+    $('#search-output').html(output);
+  }
+
+  $('#btn-search').on('click', search);
+  $('#input-search').on('keyup', search);
+
+  $('#btn-clear-search').on('click', function (e) {
+    $searchableTree.treeview('clearSearch');
+    $('#input-search').val('');
+    $('#search-output').html('');
+  });
+
+  if (window.location.hash.length > 2) {
+    var $cat = window.location.hash.slice(1);
+  }
+
+  var catNode = $searchableTree.treeview('search', [ $cat, {
+    ignoreCase: false,     // case insensitive
+    exactMatch: true,    // like or equals
+    revealResults: false,  // reveal matching nodes
+  }]);
+
+  $.each(catNode, function (index, node) {
+    $searchableTree.treeview('expandNode', [ node, { levels: 2, silent: true } ]);
+  });
+</script>
