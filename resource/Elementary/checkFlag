@@ -1,0 +1,1666 @@
+_BOOL8 __fastcall checkFlag(char *a1)
+{
+  if ( (unsigned int)function0(a1[64] & 1) )
+    return 0LL;
+  if ( (unsigned int)function1((a1[64] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function2((a1[64] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function3((a1[64] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function4((a1[64] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function5((a1[64] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function6((a1[64] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function7((a1[64] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function8(a1[38] & 1) )
+    return 0LL;
+  if ( (unsigned int)function9((a1[38] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function10((a1[38] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function11((a1[38] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function12((a1[38] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function13((a1[38] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function14((a1[38] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function15((a1[38] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function16(a1[67] & 1) )
+    return 0LL;
+  if ( (unsigned int)function17((a1[67] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function18((a1[67] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function19((a1[67] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function20((a1[67] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function21((a1[67] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function22((a1[67] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function23((a1[67] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function24(a1[88] & 1) )
+    return 0LL;
+  if ( (unsigned int)function25((a1[88] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function26((a1[88] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function27((a1[88] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function28((a1[88] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function29((a1[88] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function30((a1[88] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function31((a1[88] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function32(a1[21] & 1) )
+    return 0LL;
+  if ( (unsigned int)function33((a1[21] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function34((a1[21] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function35((a1[21] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function36((a1[21] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function37((a1[21] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function38((a1[21] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function39((a1[21] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function40(a1[68] & 1) )
+    return 0LL;
+  if ( (unsigned int)function41((a1[68] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function42((a1[68] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function43((a1[68] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function44((a1[68] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function45((a1[68] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function46((a1[68] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function47((a1[68] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function48(a1[95] & 1) )
+    return 0LL;
+  if ( (unsigned int)function49((a1[95] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function50((a1[95] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function51((a1[95] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function52((a1[95] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function53((a1[95] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function54((a1[95] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function55((a1[95] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function56(a1[36] & 1) )
+    return 0LL;
+  if ( (unsigned int)function57((a1[36] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function58((a1[36] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function59((a1[36] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function60((a1[36] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function61((a1[36] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function62((a1[36] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function63((a1[36] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function64(a1[39] & 1) )
+    return 0LL;
+  if ( (unsigned int)function65((a1[39] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function66((a1[39] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function67((a1[39] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function68((a1[39] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function69((a1[39] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function70((a1[39] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function71((a1[39] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function72(a1[77] & 1) )
+    return 0LL;
+  if ( (unsigned int)function73((a1[77] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function74((a1[77] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function75((a1[77] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function76((a1[77] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function77((a1[77] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function78((a1[77] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function79((a1[77] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function80(a1[101] & 1) )
+    return 0LL;
+  if ( (unsigned int)function81((a1[101] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function82((a1[101] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function83((a1[101] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function84((a1[101] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function85((a1[101] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function86((a1[101] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function87((a1[101] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function88(a1[90] & 1) )
+    return 0LL;
+  if ( (unsigned int)function89((a1[90] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function90((a1[90] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function91((a1[90] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function92((a1[90] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function93((a1[90] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function94((a1[90] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function95((a1[90] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function96(a1[6] & 1) )
+    return 0LL;
+  if ( (unsigned int)function97((a1[6] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function98((a1[6] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function99((a1[6] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function100((a1[6] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function101((a1[6] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function102((a1[6] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function103((a1[6] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function104(a1[48] & 1) )
+    return 0LL;
+  if ( (unsigned int)function105((a1[48] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function106((a1[48] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function107((a1[48] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function108((a1[48] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function109((a1[48] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function110((a1[48] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function111((a1[48] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function112(a1[23] & 1) )
+    return 0LL;
+  if ( (unsigned int)function113((a1[23] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function114((a1[23] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function115((a1[23] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function116((a1[23] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function117((a1[23] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function118((a1[23] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function119((a1[23] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function120(a1[62] & 1) )
+    return 0LL;
+  if ( (unsigned int)function121((a1[62] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function122((a1[62] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function123((a1[62] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function124((a1[62] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function125((a1[62] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function126((a1[62] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function127((a1[62] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function128(a1[81] & 1) )
+    return 0LL;
+  if ( (unsigned int)function129((a1[81] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function130((a1[81] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function131((a1[81] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function132((a1[81] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function133((a1[81] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function134((a1[81] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function135((a1[81] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function136(a1[83] & 1) )
+    return 0LL;
+  if ( (unsigned int)function137((a1[83] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function138((a1[83] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function139((a1[83] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function140((a1[83] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function141((a1[83] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function142((a1[83] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function143((a1[83] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function144(a1[79] & 1) )
+    return 0LL;
+  if ( (unsigned int)function145((a1[79] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function146((a1[79] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function147((a1[79] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function148((a1[79] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function149((a1[79] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function150((a1[79] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function151((a1[79] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function152(a1[44] & 1) )
+    return 0LL;
+  if ( (unsigned int)function153((a1[44] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function154((a1[44] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function155((a1[44] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function156((a1[44] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function157((a1[44] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function158((a1[44] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function159((a1[44] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function160(a1[25] & 1) )
+    return 0LL;
+  if ( (unsigned int)function161((a1[25] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function162((a1[25] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function163((a1[25] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function164((a1[25] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function165((a1[25] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function166((a1[25] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function167((a1[25] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function168(a1[17] & 1) )
+    return 0LL;
+  if ( (unsigned int)function169((a1[17] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function170((a1[17] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function171((a1[17] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function172((a1[17] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function173((a1[17] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function174((a1[17] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function175((a1[17] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function176(a1[52] & 1) )
+    return 0LL;
+  if ( (unsigned int)function177((a1[52] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function178((a1[52] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function179((a1[52] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function180((a1[52] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function181((a1[52] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function182((a1[52] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function183((a1[52] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function184(a1[3] & 1) )
+    return 0LL;
+  if ( (unsigned int)function185((a1[3] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function186((a1[3] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function187((a1[3] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function188((a1[3] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function189((a1[3] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function190((a1[3] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function191((a1[3] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function192(a1[29] & 1) )
+    return 0LL;
+  if ( (unsigned int)function193((a1[29] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function194((a1[29] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function195((a1[29] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function196((a1[29] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function197((a1[29] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function198((a1[29] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function199((a1[29] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function200(a1[102] & 1) )
+    return 0LL;
+  if ( (unsigned int)function201((a1[102] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function202((a1[102] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function203((a1[102] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function204((a1[102] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function205((a1[102] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function206((a1[102] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function207((a1[102] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function208(a1[28] & 1) )
+    return 0LL;
+  if ( (unsigned int)function209((a1[28] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function210((a1[28] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function211((a1[28] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function212((a1[28] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function213((a1[28] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function214((a1[28] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function215((a1[28] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function216(a1[93] & 1) )
+    return 0LL;
+  if ( (unsigned int)function217((a1[93] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function218((a1[93] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function219((a1[93] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function220((a1[93] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function221((a1[93] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function222((a1[93] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function223((a1[93] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function224(a1[16] & 1) )
+    return 0LL;
+  if ( (unsigned int)function225((a1[16] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function226((a1[16] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function227((a1[16] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function228((a1[16] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function229((a1[16] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function230((a1[16] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function231((a1[16] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function232(a1[43] & 1) )
+    return 0LL;
+  if ( (unsigned int)function233((a1[43] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function234((a1[43] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function235((a1[43] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function236((a1[43] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function237((a1[43] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function238((a1[43] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function239((a1[43] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function240(a1[78] & 1) )
+    return 0LL;
+  if ( (unsigned int)function241((a1[78] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function242((a1[78] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function243((a1[78] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function244((a1[78] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function245((a1[78] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function246((a1[78] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function247((a1[78] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function248(a1[9] & 1) )
+    return 0LL;
+  if ( (unsigned int)function249((a1[9] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function250((a1[9] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function251((a1[9] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function252((a1[9] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function253((a1[9] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function254((a1[9] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function255((a1[9] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function256(a1[60] & 1) )
+    return 0LL;
+  if ( (unsigned int)function257((a1[60] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function258((a1[60] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function259((a1[60] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function260((a1[60] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function261((a1[60] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function262((a1[60] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function263((a1[60] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function264(a1[70] & 1) )
+    return 0LL;
+  if ( (unsigned int)function265((a1[70] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function266((a1[70] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function267((a1[70] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function268((a1[70] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function269((a1[70] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function270((a1[70] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function271((a1[70] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function272(a1[71] & 1) )
+    return 0LL;
+  if ( (unsigned int)function273((a1[71] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function274((a1[71] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function275((a1[71] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function276((a1[71] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function277((a1[71] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function278((a1[71] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function279((a1[71] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function280(a1[65] & 1) )
+    return 0LL;
+  if ( (unsigned int)function281((a1[65] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function282((a1[65] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function283((a1[65] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function284((a1[65] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function285((a1[65] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function286((a1[65] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function287((a1[65] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function288(a1[40] & 1) )
+    return 0LL;
+  if ( (unsigned int)function289((a1[40] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function290((a1[40] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function291((a1[40] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function292((a1[40] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function293((a1[40] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function294((a1[40] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function295((a1[40] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function296(a1[12] & 1) )
+    return 0LL;
+  if ( (unsigned int)function297((a1[12] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function298((a1[12] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function299((a1[12] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function300((a1[12] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function301((a1[12] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function302((a1[12] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function303((a1[12] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function304(a1[56] & 1) )
+    return 0LL;
+  if ( (unsigned int)function305((a1[56] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function306((a1[56] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function307((a1[56] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function308((a1[56] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function309((a1[56] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function310((a1[56] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function311((a1[56] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function312(a1[13] & 1) )
+    return 0LL;
+  if ( (unsigned int)function313((a1[13] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function314((a1[13] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function315((a1[13] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function316((a1[13] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function317((a1[13] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function318((a1[13] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function319((a1[13] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function320(a1[57] & 1) )
+    return 0LL;
+  if ( (unsigned int)function321((a1[57] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function322((a1[57] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function323((a1[57] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function324((a1[57] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function325((a1[57] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function326((a1[57] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function327((a1[57] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function328(a1[37] & 1) )
+    return 0LL;
+  if ( (unsigned int)function329((a1[37] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function330((a1[37] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function331((a1[37] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function332((a1[37] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function333((a1[37] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function334((a1[37] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function335((a1[37] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function336(a1[69] & 1) )
+    return 0LL;
+  if ( (unsigned int)function337((a1[69] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function338((a1[69] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function339((a1[69] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function340((a1[69] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function341((a1[69] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function342((a1[69] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function343((a1[69] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function344(a1[7] & 1) )
+    return 0LL;
+  if ( (unsigned int)function345((a1[7] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function346((a1[7] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function347((a1[7] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function348((a1[7] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function349((a1[7] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function350((a1[7] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function351((a1[7] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function352(a1[84] & 1) )
+    return 0LL;
+  if ( (unsigned int)function353((a1[84] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function354((a1[84] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function355((a1[84] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function356((a1[84] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function357((a1[84] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function358((a1[84] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function359((a1[84] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function360(a1[58] & 1) )
+    return 0LL;
+  if ( (unsigned int)function361((a1[58] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function362((a1[58] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function363((a1[58] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function364((a1[58] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function365((a1[58] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function366((a1[58] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function367((a1[58] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function368(a1[89] & 1) )
+    return 0LL;
+  if ( (unsigned int)function369((a1[89] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function370((a1[89] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function371((a1[89] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function372((a1[89] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function373((a1[89] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function374((a1[89] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function375((a1[89] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function376(a1[91] & 1) )
+    return 0LL;
+  if ( (unsigned int)function377((a1[91] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function378((a1[91] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function379((a1[91] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function380((a1[91] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function381((a1[91] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function382((a1[91] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function383((a1[91] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function384(a1[14] & 1) )
+    return 0LL;
+  if ( (unsigned int)function385((a1[14] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function386((a1[14] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function387((a1[14] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function388((a1[14] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function389((a1[14] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function390((a1[14] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function391((a1[14] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function392(a1[82] & 1) )
+    return 0LL;
+  if ( (unsigned int)function393((a1[82] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function394((a1[82] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function395((a1[82] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function396((a1[82] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function397((a1[82] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function398((a1[82] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function399((a1[82] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function400(a1[45] & 1) )
+    return 0LL;
+  if ( (unsigned int)function401((a1[45] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function402((a1[45] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function403((a1[45] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function404((a1[45] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function405((a1[45] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function406((a1[45] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function407((a1[45] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function408(a1[76] & 1) )
+    return 0LL;
+  if ( (unsigned int)function409((a1[76] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function410((a1[76] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function411((a1[76] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function412((a1[76] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function413((a1[76] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function414((a1[76] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function415((a1[76] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function416(a1[66] & 1) )
+    return 0LL;
+  if ( (unsigned int)function417((a1[66] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function418((a1[66] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function419((a1[66] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function420((a1[66] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function421((a1[66] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function422((a1[66] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function423((a1[66] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function424(a1[98] & 1) )
+    return 0LL;
+  if ( (unsigned int)function425((a1[98] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function426((a1[98] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function427((a1[98] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function428((a1[98] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function429((a1[98] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function430((a1[98] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function431((a1[98] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function432(a1[75] & 1) )
+    return 0LL;
+  if ( (unsigned int)function433((a1[75] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function434((a1[75] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function435((a1[75] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function436((a1[75] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function437((a1[75] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function438((a1[75] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function439((a1[75] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function440(a1[47] & 1) )
+    return 0LL;
+  if ( (unsigned int)function441((a1[47] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function442((a1[47] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function443((a1[47] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function444((a1[47] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function445((a1[47] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function446((a1[47] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function447((a1[47] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function448(a1[97] & 1) )
+    return 0LL;
+  if ( (unsigned int)function449((a1[97] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function450((a1[97] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function451((a1[97] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function452((a1[97] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function453((a1[97] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function454((a1[97] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function455((a1[97] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function456(a1[34] & 1) )
+    return 0LL;
+  if ( (unsigned int)function457((a1[34] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function458((a1[34] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function459((a1[34] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function460((a1[34] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function461((a1[34] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function462((a1[34] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function463((a1[34] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function464(a1[80] & 1) )
+    return 0LL;
+  if ( (unsigned int)function465((a1[80] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function466((a1[80] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function467((a1[80] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function468((a1[80] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function469((a1[80] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function470((a1[80] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function471((a1[80] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function472(a1[103] & 1) )
+    return 0LL;
+  if ( (unsigned int)function473((a1[103] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function474((a1[103] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function475((a1[103] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function476((a1[103] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function477((a1[103] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function478((a1[103] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function479((a1[103] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function480(a1[86] & 1) )
+    return 0LL;
+  if ( (unsigned int)function481((a1[86] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function482((a1[86] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function483((a1[86] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function484((a1[86] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function485((a1[86] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function486((a1[86] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function487((a1[86] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function488(a1[5] & 1) )
+    return 0LL;
+  if ( (unsigned int)function489((a1[5] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function490((a1[5] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function491((a1[5] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function492((a1[5] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function493((a1[5] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function494((a1[5] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function495((a1[5] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function496(a1[74] & 1) )
+    return 0LL;
+  if ( (unsigned int)function497((a1[74] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function498((a1[74] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function499((a1[74] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function500((a1[74] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function501((a1[74] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function502((a1[74] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function503((a1[74] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function504(a1[1] & 1) )
+    return 0LL;
+  if ( (unsigned int)function505((a1[1] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function506((a1[1] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function507((a1[1] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function508((a1[1] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function509((a1[1] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function510((a1[1] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function511((a1[1] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function512(a1[18] & 1) )
+    return 0LL;
+  if ( (unsigned int)function513((a1[18] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function514((a1[18] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function515((a1[18] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function516((a1[18] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function517((a1[18] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function518((a1[18] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function519((a1[18] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function520(a1[51] & 1) )
+    return 0LL;
+  if ( (unsigned int)function521((a1[51] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function522((a1[51] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function523((a1[51] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function524((a1[51] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function525((a1[51] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function526((a1[51] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function527((a1[51] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function528(a1[72] & 1) )
+    return 0LL;
+  if ( (unsigned int)function529((a1[72] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function530((a1[72] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function531((a1[72] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function532((a1[72] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function533((a1[72] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function534((a1[72] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function535((a1[72] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function536(a1[26] & 1) )
+    return 0LL;
+  if ( (unsigned int)function537((a1[26] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function538((a1[26] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function539((a1[26] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function540((a1[26] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function541((a1[26] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function542((a1[26] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function543((a1[26] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function544(a1[8] & 1) )
+    return 0LL;
+  if ( (unsigned int)function545((a1[8] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function546((a1[8] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function547((a1[8] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function548((a1[8] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function549((a1[8] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function550((a1[8] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function551((a1[8] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function552(a1[31] & 1) )
+    return 0LL;
+  if ( (unsigned int)function553((a1[31] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function554((a1[31] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function555((a1[31] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function556((a1[31] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function557((a1[31] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function558((a1[31] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function559((a1[31] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function560(a1[42] & 1) )
+    return 0LL;
+  if ( (unsigned int)function561((a1[42] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function562((a1[42] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function563((a1[42] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function564((a1[42] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function565((a1[42] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function566((a1[42] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function567((a1[42] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function568(a1[85] & 1) )
+    return 0LL;
+  if ( (unsigned int)function569((a1[85] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function570((a1[85] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function571((a1[85] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function572((a1[85] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function573((a1[85] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function574((a1[85] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function575((a1[85] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function576(a1[49] & 1) )
+    return 0LL;
+  if ( (unsigned int)function577((a1[49] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function578((a1[49] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function579((a1[49] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function580((a1[49] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function581((a1[49] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function582((a1[49] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function583((a1[49] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function584(a1[33] & 1) )
+    return 0LL;
+  if ( (unsigned int)function585((a1[33] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function586((a1[33] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function587((a1[33] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function588((a1[33] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function589((a1[33] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function590((a1[33] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function591((a1[33] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function592(a1[54] & 1) )
+    return 0LL;
+  if ( (unsigned int)function593((a1[54] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function594((a1[54] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function595((a1[54] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function596((a1[54] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function597((a1[54] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function598((a1[54] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function599((a1[54] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function600(a1[63] & 1) )
+    return 0LL;
+  if ( (unsigned int)function601((a1[63] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function602((a1[63] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function603((a1[63] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function604((a1[63] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function605((a1[63] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function606((a1[63] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function607((a1[63] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function608(a1[46] & 1) )
+    return 0LL;
+  if ( (unsigned int)function609((a1[46] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function610((a1[46] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function611((a1[46] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function612((a1[46] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function613((a1[46] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function614((a1[46] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function615((a1[46] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function616(a1[4] & 1) )
+    return 0LL;
+  if ( (unsigned int)function617((a1[4] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function618((a1[4] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function619((a1[4] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function620((a1[4] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function621((a1[4] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function622((a1[4] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function623((a1[4] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function624(a1[41] & 1) )
+    return 0LL;
+  if ( (unsigned int)function625((a1[41] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function626((a1[41] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function627((a1[41] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function628((a1[41] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function629((a1[41] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function630((a1[41] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function631((a1[41] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function632(a1[24] & 1) )
+    return 0LL;
+  if ( (unsigned int)function633((a1[24] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function634((a1[24] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function635((a1[24] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function636((a1[24] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function637((a1[24] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function638((a1[24] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function639((a1[24] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function640(a1[73] & 1) )
+    return 0LL;
+  if ( (unsigned int)function641((a1[73] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function642((a1[73] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function643((a1[73] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function644((a1[73] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function645((a1[73] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function646((a1[73] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function647((a1[73] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function648(a1[35] & 1) )
+    return 0LL;
+  if ( (unsigned int)function649((a1[35] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function650((a1[35] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function651((a1[35] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function652((a1[35] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function653((a1[35] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function654((a1[35] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function655((a1[35] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function656(a1[30] & 1) )
+    return 0LL;
+  if ( (unsigned int)function657((a1[30] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function658((a1[30] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function659((a1[30] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function660((a1[30] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function661((a1[30] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function662((a1[30] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function663((a1[30] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function664(a1[92] & 1) )
+    return 0LL;
+  if ( (unsigned int)function665((a1[92] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function666((a1[92] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function667((a1[92] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function668((a1[92] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function669((a1[92] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function670((a1[92] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function671((a1[92] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function672(a1[11] & 1) )
+    return 0LL;
+  if ( (unsigned int)function673((a1[11] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function674((a1[11] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function675((a1[11] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function676((a1[11] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function677((a1[11] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function678((a1[11] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function679((a1[11] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function680(a1[87] & 1) )
+    return 0LL;
+  if ( (unsigned int)function681((a1[87] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function682((a1[87] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function683((a1[87] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function684((a1[87] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function685((a1[87] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function686((a1[87] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function687((a1[87] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function688(a1[50] & 1) )
+    return 0LL;
+  if ( (unsigned int)function689((a1[50] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function690((a1[50] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function691((a1[50] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function692((a1[50] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function693((a1[50] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function694((a1[50] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function695((a1[50] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function696(a1[53] & 1) )
+    return 0LL;
+  if ( (unsigned int)function697((a1[53] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function698((a1[53] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function699((a1[53] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function700((a1[53] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function701((a1[53] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function702((a1[53] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function703((a1[53] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function704(a1[32] & 1) )
+    return 0LL;
+  if ( (unsigned int)function705((a1[32] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function706((a1[32] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function707((a1[32] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function708((a1[32] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function709((a1[32] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function710((a1[32] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function711((a1[32] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function712(a1[99] & 1) )
+    return 0LL;
+  if ( (unsigned int)function713((a1[99] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function714((a1[99] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function715((a1[99] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function716((a1[99] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function717((a1[99] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function718((a1[99] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function719((a1[99] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function720(a1[96] & 1) )
+    return 0LL;
+  if ( (unsigned int)function721((a1[96] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function722((a1[96] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function723((a1[96] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function724((a1[96] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function725((a1[96] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function726((a1[96] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function727((a1[96] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function728(a1[19] & 1) )
+    return 0LL;
+  if ( (unsigned int)function729((a1[19] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function730((a1[19] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function731((a1[19] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function732((a1[19] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function733((a1[19] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function734((a1[19] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function735((a1[19] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function736(a1[10] & 1) )
+    return 0LL;
+  if ( (unsigned int)function737((a1[10] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function738((a1[10] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function739((a1[10] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function740((a1[10] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function741((a1[10] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function742((a1[10] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function743((a1[10] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function744(a1[15] & 1) )
+    return 0LL;
+  if ( (unsigned int)function745((a1[15] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function746((a1[15] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function747((a1[15] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function748((a1[15] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function749((a1[15] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function750((a1[15] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function751((a1[15] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function752(a1[55] & 1) )
+    return 0LL;
+  if ( (unsigned int)function753((a1[55] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function754((a1[55] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function755((a1[55] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function756((a1[55] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function757((a1[55] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function758((a1[55] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function759((a1[55] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function760(a1[100] & 1) )
+    return 0LL;
+  if ( (unsigned int)function761((a1[100] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function762((a1[100] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function763((a1[100] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function764((a1[100] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function765((a1[100] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function766((a1[100] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function767((a1[100] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function768(a1[2] & 1) )
+    return 0LL;
+  if ( (unsigned int)function769((a1[2] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function770((a1[2] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function771((a1[2] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function772((a1[2] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function773((a1[2] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function774((a1[2] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function775((a1[2] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function776(a1[59] & 1) )
+    return 0LL;
+  if ( (unsigned int)function777((a1[59] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function778((a1[59] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function779((a1[59] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function780((a1[59] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function781((a1[59] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function782((a1[59] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function783((a1[59] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function784(a1[94] & 1) )
+    return 0LL;
+  if ( (unsigned int)function785((a1[94] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function786((a1[94] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function787((a1[94] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function788((a1[94] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function789((a1[94] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function790((a1[94] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function791((a1[94] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function792(a1[61] & 1) )
+    return 0LL;
+  if ( (unsigned int)function793((a1[61] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function794((a1[61] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function795((a1[61] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function796((a1[61] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function797((a1[61] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function798((a1[61] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function799((a1[61] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function800(a1[22] & 1) )
+    return 0LL;
+  if ( (unsigned int)function801((a1[22] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function802((a1[22] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function803((a1[22] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function804((a1[22] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function805((a1[22] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function806((a1[22] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function807((a1[22] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function808(*a1 & 1) )
+    return 0LL;
+  if ( (unsigned int)function809((*a1 >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function810((*a1 >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function811((*a1 >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function812((*a1 >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function813((*a1 >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function814((*a1 >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function815((*a1 >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function816(a1[27] & 1) )
+    return 0LL;
+  if ( (unsigned int)function817((a1[27] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function818((a1[27] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function819((a1[27] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function820((a1[27] >> 2) & 1) )
+    return 0LL;
+  if ( (unsigned int)function821((a1[27] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function822((a1[27] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function823((a1[27] >> 4) & 1) )
+    return 0LL;
+  if ( (unsigned int)function824(a1[20] & 1) )
+    return 0LL;
+  if ( (unsigned int)function825((a1[20] >> 5) & 1) )
+    return 0LL;
+  if ( (unsigned int)function826((a1[20] >> 3) & 1) )
+    return 0LL;
+  if ( (unsigned int)function827((a1[20] >> 6) & 1) )
+    return 0LL;
+  if ( (unsigned int)function828((a1[20] >> 7) & 1) )
+    return 0LL;
+  if ( (unsigned int)function829((a1[20] >> 1) & 1) )
+    return 0LL;
+  if ( (unsigned int)function830((a1[20] >> 2) & 1) )
+    return 0LL;
+  return (unsigned int)function831((a1[20] >> 4) & 1) == 0;
+}
