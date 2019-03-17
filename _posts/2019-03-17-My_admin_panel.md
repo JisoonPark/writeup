@@ -11,7 +11,7 @@ tag: [php, type_confusion]
 
 **Source**: CONFidence CTF 2019 Teaser
 
-**Points**: ???
+**Points**: 51
 
 **Author**: Jisoon Park(js00n.park)
 
