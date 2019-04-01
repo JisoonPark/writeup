@@ -66,7 +66,7 @@ vaff_iafi_mpamxcns_iafimak_ayrahf_ybpxf_cn_kiq_fiajurf
 pass_hash_cracoing_hashcab_always_lxros_in_bhe_shadkws
 ```
 
-이정도면 우연히 만들어진 것을 아닌 것 같은데 알 수 없는 부분들이 있다. 특히 마지막은 '**shadow**'가 되어야 할 것 같은데 뭔가 완전하지 않다.
+이정도면 우연히 만들어진 것은 아닌 것 같은데 알 수 없는 부분들이 있다. 특히 마지막은 '**shadow**'가 되어야 할 것 같은데 뭔가 완전하지 않다.
 
 반복을 500번으로 늘리고 "pass"로 시작해서 "shadow"로 끝나는 문자열이 있는지 확인해 봤더니 의미있는 문자열이 출력되었다. ([코드]({{site.github.master}}{{page.rpath}}/ex.py))
 
