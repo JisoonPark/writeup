@@ -56,7 +56,7 @@ check_flag() 함수가 핵심인 것 같다. 좀 더 들여다 보자.
   {
     if ( i > 19 )
     {
-      printf("PCTF{%s}\n", flag_buf);
+      printf("PCTF{% raw %}{%s}{% endraw %}\n", flag_buf);
       exit(0);
     }
     v0 = flag_buf[i];
