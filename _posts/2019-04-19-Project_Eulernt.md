@@ -103,3 +103,19 @@ sN / b = 0.998497593247
 ![img]({{page.rpath|prepend:site.baseurl}}/flag.png)
 
 Flag : **PCTF{R3fr3sh1ngly_Sm00th}**
+
+이후에 암호천재님의 조언을 받아 알고리즘을 개선하였다.
+
+  * <em>N = 1 * 2 * 3 * ... * 332 * 333 = 2<sup>238</sup> * 3<sup>165</sup> * 5<sup>81</sup> * ... * 313 * 317 * 331</em>
+
+이므로, <em>sN = sqrt(N)</em>은 아래와 같이 쓸 수 있다.
+
+  * <em>sqrt(N) = 2<sup>119</sup> * 3<sup>82</sup> * 5<sup>40</sup> * ... * sqrt(3 * 5 * ... * 313 * 317 * 331) = x * sqrt(y)</em>
+
+그러므로, 위의 문제 <em>k | N, k &asymp; sN</em>을 만족하는 k 찾기는 <em>k' | y, k' &asymp; sN/x</em>를 만족하는 k'을 찾는 문제로 다시 쓸 수 있다.
+
+생긴건 동일하지만 찾아야 하는 수의 범위가 훨씬 줄어들었다.
+
+기존의 코드에서 크게 변경할 것 없이, 알고리즘의 전단계에서 N을 y로 바꿔주고 sN을 sN/x로 바꾸기만 하면 된다. 다만, 범위가 줄어든 만큼 조합을 찾는 것도 어려워 졌기 때문에 5개의 순서쌍까지 후보에 넣어야 solution을 찾을 수 있었으나, 소요 시간은 훨씬 줄어 1분 내에 알고리즘이 종료되었다.([code]({{site.github.master}}{{page.rpath}}/ex2.py)) [3초짜리 알고리즘]({{site.github.master}}{{page.rpath}}/ex_otherteam.py)은 대체....
+
+![img]({{page.rpath|prepend:site.baseurl}}/run2.png)
