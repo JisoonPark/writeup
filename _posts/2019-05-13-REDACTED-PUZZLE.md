@@ -11,7 +11,7 @@ tag: [git]
 
 **Source**: DEFCON CTF 2019 Qulas.
 
-**Points**: Not fixed yet
+**Points**: 110
 
 **Author**: Jisoon Park(js00n.park)
 

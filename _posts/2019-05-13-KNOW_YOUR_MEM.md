@@ -11,7 +11,7 @@ tag: [mmap]
 
 **Source**: DEFCON CTF 2019 Qulas.
 
-**Points**: Not fixed yet
+**Points**: 108
 
 **Author**: Jisoon Park(js00n.park)
 
