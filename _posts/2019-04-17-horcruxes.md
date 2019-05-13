@@ -4,7 +4,7 @@ title: horcruxes
 category: Pwnable
 source: "pwnable.kr"
 rpath: /resource/horcruxes
-tag: [ROP]
+tag: [rop]
 ---
 
 **Category**: Pwnable
