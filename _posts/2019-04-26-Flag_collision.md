@@ -39,6 +39,6 @@ CRC32 collision generator를 찾아보다가 [이 사이트](https://www.nayuki.
 
 loop을 이용하여 계속 문제를 풀어나가다 보면 flag를 얻을 수 있다.[(code)]({{site.github.master}}{{page.rpath}}/ex.py)
 
-![flag]({{site.github.master}}{{page.rpath}}/flag.png)
+![img]({{page.rpath|prepend:site.baseurl}}/flag.png)
 
 Flag : **ASIS{3asy_c0din9_fOr_W4rM_UP}**
