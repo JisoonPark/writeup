@@ -30,6 +30,7 @@ output 파일에는 암호화된 flag와 plaintext, ciphertext 쌍 6개가 주�
 ruby 코드도 살펴보자.
 
 ```ruby
+{% raw %}
 [생략]
 
 ROUNDS = 765
@@ -61,6 +62,7 @@ PAIRS.times do |i|
     enc = encrypt(plain, key)
     STDOUT.puts "Pair %d: plain=%x enc=%x" % [-~i, plain, enc]
 end
+{% endraw %}
 ```
 
 차사하게 flag와 Key는 빼고 줬나보다.
